@@ -17,6 +17,115 @@ body {
     scroll-behavior: smooth;
 }
 
+/********************Debut Communes********************/
+.titre-commune {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #000000;
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.titre-commune::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.308);
+    top: 20px;
+}
+
+.nos-communes {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#img-carte {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.desc-btn {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+
+#choix-agglo {
+    position: absolute;
+    width: 8%;
+    text-align: center;
+    border-radius: 50px;
+    background: #FFF;
+    height: 30px;
+    top: 12%;
+    color: #000;
+    font-family: Comfortaa;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.description-commune {
+    border-radius: 30px;
+    background: #F0EDED;
+    width: 50%;
+    max-height: 450px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.description-commune h4 {
+    text-align: center;
+    padding: 15px 0;
+    color: #538E52;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.description-commune p {
+    margin: 0 20px 20px;
+    color: #585858;
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 120% */
+}
+
+.description-commune button {
+    background-color: #538E52;
+    align-items: center;
+    width: 40%;
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.description-commune img {
+    position: relative;
+    top: 3px;
+    left: 8px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+/********************Fin Communes********************/
+
 /********************Debut Footer********************/
 footer {
     position: relative;
@@ -73,7 +182,7 @@ footer {
     left: 18%;
     height: 70%;
     width: 2px;
-    background-color: #ffffffb9; 
+    background-color: #ffffffb9;
 }
 
 .newsletter {
@@ -105,6 +214,7 @@ footer {
     border: none;
     position: relative;
     margin: 3px 0 0 15px;
+    cursor: pointer;
 }
 
 .newsletter button:active {
@@ -165,7 +275,7 @@ footer {
 }
 
 /*Pour centrer le trait a droite du contact*/
-#troisieme-li::after{
+#troisieme-li::after {
     left: 115%;
 }
 
@@ -286,4 +396,5 @@ footer {
         width: 12%;
     }
 }
+
 /********************Fin Footer********************/
