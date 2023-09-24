@@ -20,7 +20,7 @@ body {
 /********************Debut Footer********************/
 footer {
     position: relative;
-    top: 100%;
+    /* top: 100%; */
     border-top: 1px solid #ffffff;
     width: 100%;
     background-color: #585858;
@@ -156,6 +156,10 @@ footer {
     left: 108%;
 }
 
+.liste-liens li:hover {
+    color: #538E52;
+}
+
 #dernier-li::after {
     display: none;
 }
@@ -163,5 +167,123 @@ footer {
 /*Pour centrer le trait a droite du contact*/
 #troisieme-li::after{
     left: 115%;
+}
+
+@media screen and (max-width: 1295px) {
+    .container-adresse::after {
+        left: 25%;
+    }
+
+    .container-liens {
+        left: inherit;
+    }
+}
+
+@media screen and (max-width: 1069px) {
+    .container-liens {
+        right: 9%;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .container-adresse {
+        display: flex;
+        position: relative;
+    }
+
+    .container-adresse::after {
+        height: 2px;
+        width: 90%;
+        left: 5%;
+        top: 90%;
+    }
+
+    .container-liens {
+        right: inherit;
+        left: 25px;
+    }
+
+    .newsletter {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .container-liens {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .container-liens {
+        left: inherit;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .liste-liens {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #dernier-li {
+        margin-right: inherit;
+    }
+
+    .newsletter p,
+    .newsletter input {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .adresse {
+        position: relative;
+        text-align: center;
+    }
+
+    .logo-footer {
+        justify-content: center;
+    }
+
+    .container-adresse {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-adresse::after {
+        top: 100%;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    #avant-dernier-li::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    #avant-dernier-li::after {
+        display: block;
+    }
+
+    #troisieme-li {
+        margin-right: 16px;
+    }
+
+    #troisieme-li::after {
+        display: none;
+    }
+
+    .newsletter button {
+        width: 12%;
+    }
 }
 /********************Fin Footer********************/

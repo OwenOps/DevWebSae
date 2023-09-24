@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/accueil.css">
+    <script src="script/script.js"></script>
     <title>Chartres</title>
 </head>
 
@@ -19,7 +20,7 @@
                         <span style="font-size: 21px;"> Métropole </span>
                     </p>
                 </div>
-                <p>
+                <p class="adresse">
                     <span> Hotel d'Agglomération </span><br>
                     Place des Halles <br>
                     28019 Chartres Cedex <br><br>
@@ -29,7 +30,7 @@
             <div class="container-liens">
                 <div class="newsletter">
                     <p> S'abonner à la newsletter : </p>
-                    <input type="text" name="news-letter" placeholder="Saisissez votre email..." style="font-weight: bold; font-size: 15px">
+                    <input type="text" name="news-letter" id="input-news"   placeholder="Saisissez votre email..." style="font-weight: bold; font-size: 15px">
                     <button>
                         <img src="img/logo-verifie.png" alt="logo-verifie" style="width: 40%;">
                     </button>
@@ -49,7 +50,7 @@
                         </a>
                         <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/mentions-legales"
                             target="_blank">
-                            <li>Mentions légales</li>
+                            <li id="avant-dernier-li">Mentions légales</li>
                         </a>
                         <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/credits"
                             target="_blank">
