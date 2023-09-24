@@ -17,14 +17,27 @@ body {
     scroll-behavior: smooth;
 }
 
+/********************Debut Footer********************/
 footer {
     position: relative;
-    /* top: 100%; */
+    top: 100%;
     border-top: 1px solid #ffffff;
     width: 100%;
     background-color: #585858;
     color: rgb(255, 255, 255);
     flex-shrink: 0;
+}
+
+.newsletter,
+.liste-liens,
+.container-footer {
+    display: flex;
+}
+
+.newsletter p,
+.liste-liens,
+.container-adresse p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-footer {
@@ -35,28 +48,54 @@ footer {
     padding: 30px;
 }
 
-.container-newsletter {
-    align-items: center;
-    margin-bottom: 50px;
+.container-adresse img {
+    width: 25%;
+    margin-top: 30px;
 }
 
-.container-newsletter p {
+.logo-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+}
+
+.logo-footer p {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.container-adresse::after {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    height: 70%;
+    width: 2px;
+    background-color: #ffffffb9; 
+}
+
+.newsletter {
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.newsletter p {
     margin-right: 10px;
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container-newsletter input {
+.newsletter input {
     margin-top: 5px;
 }
 
-.container-newsletter img {
-    width: 40%;
+.newsletter img {
     position: relative;
     top: 3px;
 }
 
-.container-newsletter button {
+.newsletter button {
     width: 9%;
     border-radius: 10px;
     background-color: #538E52;
@@ -68,16 +107,16 @@ footer {
     margin: 3px 0 0 15px;
 }
 
-.container-newsletter button:active {
+.newsletter button:active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
-.container-newsletter button:focus {
+.newsletter button:focus {
     outline: none;
 }
 
-.container-newsletter button:after {
+.newsletter button:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -91,19 +130,20 @@ footer {
     transition: all 0.5s ease;
 }
 
-.container-newsletter button:hover:after {
+.newsletter button:hover:after {
     width: 210px;
     height: 200px;
     opacity: 1;
 }
 
-
-.liste-liens a {
-    margin-right: 30px;
+.container-liens {
+    position: relative;
+    left: 20%;
 }
 
 .liste-liens li {
     position: relative;
+    margin-right: 30px;
 }
 
 .liste-liens li::after {
@@ -116,35 +156,12 @@ footer {
     left: 108%;
 }
 
-.container-newsletter,
-.liste-liens,
-.container-footer {
-    display: flex;
+#dernier-li::after {
+    display: none;
 }
 
-.container-autre {
-    position: relative;
-    left: 20%;
+/*Pour centrer le trait a droite du contact*/
+#troisieme-li::after{
+    left: 115%;
 }
-
-.liste-liens {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.container-adresse p span {
-    font-weight: bold;
-}
-
-.container-adresse p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.container-adresse::after {
-    content: "";
-    position: absolute;
-    top: 15%;
-    left: 18%;
-    height: 65%;
-    width: 1px;
-    background-color: #ffffff9c; 
-}
+/********************Fin Footer********************/
