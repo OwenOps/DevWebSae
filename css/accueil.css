@@ -6,8 +6,8 @@
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 body {
@@ -22,10 +22,9 @@ body {
     margin: 50px 0;
     display: flex;
     justify-content: center;
-    font-size: 30px;
     color: #000000;
     font-family: Comfortaa;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
 }
 
@@ -46,83 +45,90 @@ body {
 
 #img-carte {
     width: 30%;
-    margin-bottom: 30px;
 }
 
-.desc-btn {
+.description-choix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#boite-bouton {
     display: flex;
     justify-content: center;
-    width: 45%;
+    position: sticky;
 }
 
 #choix-agglo {
-    position: absolute;
-    width: 8%;
+    position: relative;
+    bottom: 80px;
+    margin: 0 auto;
+    margin-bottom: 15px;
     text-align: center;
     border-radius: 50px;
+    width: 20%;
     background: #FFF;
     height: 30px;
-    top: 12%;
     color: #000;
     font-family: Comfortaa;
     font-weight: bold;
     cursor: pointer;
 }
 
-.description-commune {
+#description-commune {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
     border-radius: 30px;
     background: #F0EDED;
-    width: 50%;
     max-height: 450px;
     overflow: hidden;
+    width: 55%;
     transition: max-height 0.3s ease-in-out;
 }
 
-.description-commune h4 {
+#description-commune h4 {
     text-align: center;
-    padding: 15px 0;
+    margin: 15px 0;
     color: #538E52;
-    text-align: center;
     font-family: Comfortaa;
     font-size: 35px;
     font-weight: 700;
 }
 
-.description-commune p {
-    margin: 0 20px 20px;
+#description-commune p {
+    display: flex;
+    margin: 0 12px 20px;
     color: #585858;
     font-family: Comfortaa;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 120% */
+    line-height: 21px;
 }
 
-.description-commune button {
+#description-commune button {
+    position: relative;
+    bottom: 10px;
     background-color: #538E52;
-    align-items: center;
-    width: 40%;
     border: none;
-    margin-bottom: 10px;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 20px;
     color: #FFF;
-    text-align: center;
     font-family: Comfortaa;
     font-size: 15px;
     font-weight: 400;
     cursor: pointer;
 }
 
-.description-commune img {
-    position: relative;
-    top: 3px;
-    left: 8px;
+#description-commune button:hover {
+    background-color: #558154;
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
+#description-commune img {
+    position: relative;
+    left: 8px;
 }
 /********************Fin Communes********************/
 
@@ -178,30 +184,28 @@ footer {
 .container-adresse::after {
     content: "";
     position: absolute;
-    top: 18%;
+    top: 12%;
     left: 18%;
-    height: 70%;
+    height: 75%;
     width: 2px;
     background-color: #ffffffb9;
 }
 
 .newsletter {
     align-items: center;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
 .newsletter p {
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-.newsletter input {
-    margin-top: 5px;
-}
-
-.newsletter img {
+.newsletter input,
+.newsletter button {
     position: relative;
-    top: 3px;
+    bottom: 4px;
 }
 
 .newsletter button {
@@ -213,7 +217,7 @@ footer {
     transition: all 0.3s ease;
     border: none;
     position: relative;
-    margin: 3px 0 0 15px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
@@ -244,6 +248,12 @@ footer {
     width: 210px;
     height: 200px;
     opacity: 1;
+}
+
+.test {
+    display: flex;
+    justify-content: start;
+    text-align: start;
 }
 
 .container-liens {

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/accueil.css">
     <script src="script/script.js"></script>
     <title>Chartres</title>
@@ -12,57 +13,240 @@
 <body>
     <!--**************************************************Debut Communes**************************************************-->
     <div class="titre-commune">
-        <h4>
+        <p>
             Nos Communes
-        </h4>
+        </p>  
     </div>
     <div class="nos-communes">
         <img src="img/carte.png" alt="carte-agglo" id="img-carte">
-        <div class="desc-btn">
-            <select id="choix-agglo">
-                <option value="option1">Commune</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-                <option value="option4">Option 4</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-                <option value="option4">Option 4</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-                <option value="option4">Option 4</option>
-            </select>
+        <div class="description-choix">
+                <select id="choix-agglo" class="select-option">
+                    <option value="commune">Commune</option>
+                    <option value="barjouville">Barjouville</option>
+                    <option value="champhol">Champhol</option>
+                    <option value="champseru">Champseru</option>
+                    <option value="chartres">Chartres</option>
+                    <option value="coltainville">Coltainville</option>
+                    <option value="gasvilleoiseme">Gasville-Oisème</option>
+                    <option value="lecoudray">Le Coudray</option>
+                    <option value="leves">Lèves</option>
+                    <option value="luisant">Luisant</option>
+                    <option value="luce">Lucé</option>
+                    <option value="mainvilliers">Mainvilliers</option>
+                    <option value="morancez">Morancez</option>
+                </select>
+            <div id="description-commune">
+                <div class="commune">
+                    <h4>Communes</h4>
+                    <p>
+                        Le périmètre de Chartres métropole s’étend depuis le 1er janvier 2018 à 66 communes.
 
-            <div class="description-commune">
-                <h4>Titre</h4>
-                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
-                    impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
-                    quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
-                    spécimen de polices de texte. <br><br>
-                    Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
-                    informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
-                    grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
-                    par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-                </p>
-                <div class="btn">
+                        Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                        
+                        En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                        
+                        20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.
+                    </p>
+                </div>
+                <div class="barjouville" style="display: none;">
+                    <h4>Barjouville</h4>
+                    <p>Située à la porte sud de la zone urbaine de l’agglomération, Barjouville présente deux visages, deux identités. La première, nichée au coeur d’un espace privilégié de la Vallée de l’Eure, est un authentique village dont la partie la plus ancienne, son église, ses murs en bauge et son exploitation agricole confirment un enracinement dans une ruralité à laquelle nombre de Barjouvilloises et Barjouvillois sont attachés. <br><br>
+                    Au cours des dernières décennies, une urbanisation sous la forme d’espaces pavillonnaires et de logement locatifs sociaux s’est étendue sur les hauteurs de la rive ouest de l’Eure.
+                    </p>
+                </div>
+                <div class="champhol" style="display: none;">
+                    <h4>Champhol</h4>
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="champseru" style="display: none;">
+                    <h4>Champseru</h4>
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="chartres" style="display: none;">
+                    <h4>Chartres</h4>
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="coltainville" style="display: none;">
+                    <h4>Coltainville</h4>
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="gasvilleoiseme" style="display: none;">
+                    <h4>Gasville-Oisème</h4>
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="lecoudray" style="display: none;">
+                    <h4>Le Coudray</h4>
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="leves" style="display: none;">
+                    <h4>Lèves</h4>
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="luisant" style="display: none;">
+                    <h4>Luisant</h4>
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="luce" style="display: none;">
+                    <h4>Lucé</h4>
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="mainvilliers" style="display: none;">
+                    <h4>Mainvilliers</h4>
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="morancez" style="display: none;">
+                    <h4>Morancez</h4>
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <!--**************************************************Debut Bouton savoir plus**************************************************-->
+                <div id="boite-bouton">
                     <button id="btn">
                         En savoir plus
-                        <img src="img/fleche-bas.png" alt="fleche-bas" width="10%">
+                        <img src="img/fleche-bas.png" alt="fleche-bas" width="9%">
                     </button>
                 </div>
-                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
-                    impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
-                    quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
-                    spécimen de polices de texte. <br><br>
-                    Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
-                    informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
-                    grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
-                    par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-                </p>
+                <!--**************************************************Fin Bouton savoir plus**************************************************-->
+                <div class="barjouville" style="display: none;">
+                    <p>La seconde, à l’écart du village sur le plateau nord-ouest, s’étend en rive de la rocade, une zone d’activités commerciales réunissant une soixantaine d’enseignes principalement dédiées à l’équipement de la maison et de la personne.
+                    </p>
+                </div>
+                <div class="champhol" style="display: none;">
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="champseru" style="display: none;">
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="chartres" style="display: none;">
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="coltainville" style="display: none;">
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="gasvilleoiseme" style="display: none;">
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                        impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500,
+                        quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre
+                        spécimen de polices de texte. <br><br>
+                        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique
+                        informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                        grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
+                        par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    </p>
+                </div>
+                <div class="lecoudray" style="display: none;">
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="leves" style="display: none;">
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="luisant" style="display: none;">
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="luce" style="display: none;">
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="mainvilliers" style="display: none;">
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
+                <div class="morancez" style="display: none;">
+                    <p>Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en 2010 à 47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+                    En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors 46 communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans Chartres métropole.
+                    20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -93,7 +277,7 @@
                         <img src="img/logo-verifie.png" alt="logo-verifie" style="width: 40%;">
                     </button>
                 </div>
-                <div>
+                <div id="test">
                     <ul class="liste-liens">
                         <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/accessibilite"
                             target="_blank">
