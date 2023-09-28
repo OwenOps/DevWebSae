@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    list-style-type: none;
 }
 
 a {
@@ -19,7 +18,7 @@ body {
 
 /********************Debut Communes********************/
 .titre-commune {
-    margin: 50px 0;
+    margin: 50px 0 130px;
     display: flex;
     justify-content: center;
     color: #000000;
@@ -41,10 +40,11 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center; 
+    margin-bottom: 150px;
 }
 
 #img-carte {
-    width: 30%;
+    width: 35%;
 }
 
 .description-choix {
@@ -56,15 +56,13 @@ body {
 
 #boite-bouton {
     display: flex;
-    justify-content: center;
-    position: sticky;
+    margin: 18px 0;
 }
 
 #choix-agglo {
     position: relative;
-    bottom: 80px;
+    bottom: 75px;
     margin: 0 auto;
-    margin-bottom: 15px;
     text-align: center;
     border-radius: 50px;
     width: 20%;
@@ -82,7 +80,7 @@ body {
     flex-direction: column;
     border-radius: 30px;
     background: #F0EDED;
-    max-height: 450px;
+    max-height: 365px;
     overflow: hidden;
     width: 55%;
     transition: max-height 0.3s ease-in-out;
@@ -97,22 +95,39 @@ body {
     font-weight: 700;
 }
 
-#description-commune p {
+#description-commune p,
+.liste-clef {
     display: flex;
-    margin: 0 12px 20px;
+    margin: 0 12px;
     color: #585858;
     font-family: Comfortaa;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
 }
 
+.liste-clef  {
+    flex-direction: column;
+}
+
+.contact-ville {
+    flex-direction: column;
+    text-align: center;
+}
+
+.lien-commune {
+    cursor: pointer;
+    margin-bottom: 12px;
+    color: #007FFF !important;
+    text-decoration: underline !important;
+}
+
 #description-commune button {
-    position: relative;
-    bottom: 10px;
+    margin: 0 auto;
     background-color: #538E52;
     border: none;
+    width: 35%;
     padding: 5px;
     border-radius: 20px;
     color: #FFF;
@@ -128,7 +143,45 @@ body {
 
 #description-commune img {
     position: relative;
-    left: 8px;
+    left: 5px;
+}
+
+@media screen and (max-width: 1750px) {
+    #description-commune {
+        max-height: 390px;
+    }
+}
+
+@media screen and (max-width: 1715px) {
+    #description-commune {
+        max-height: 410px;
+    }
+}
+
+@media screen and (max-width: 1458px) {
+    #description-commune {
+        width: 82%;
+        max-height: 345px;
+    }
+
+    #choix-agglo {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1377px) {
+}
+
+@media screen and (max-width: 1347px) {
+    #description-commune {
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    #description-commune {
+        /* background-color: red; */
+    }
 }
 /********************Fin Communes********************/
 
@@ -262,6 +315,7 @@ footer {
 }
 
 .liste-liens li {
+    list-style-type: none;
     position: relative;
     margin-right: 30px;
 }
