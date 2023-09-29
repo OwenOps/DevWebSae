@@ -50,13 +50,7 @@ body {
 .description-choix {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50%;
-}
-
-#boite-bouton {
-    display: flex;
-    margin: 18px 0;
 }
 
 #choix-agglo {
@@ -80,10 +74,9 @@ body {
     flex-direction: column;
     border-radius: 30px;
     background: #F0EDED;
-    max-height: 365px;
-    overflow: hidden;
-    width: 55%;
-    transition: max-height 0.3s ease-in-out;
+    max-height: 390px;
+    overflow: auto;
+    width: 70%;
 }
 
 #description-commune h4 {
@@ -107,12 +100,12 @@ body {
     line-height: 21px;
 }
 
-.liste-clef  {
+.liste-clef,
+.contact-ville  {
     flex-direction: column;
 }
 
 .contact-ville {
-    flex-direction: column;
     text-align: center;
 }
 
@@ -123,64 +116,50 @@ body {
     text-decoration: underline !important;
 }
 
-#description-commune button {
-    margin: 0 auto;
-    background-color: #538E52;
-    border: none;
-    width: 35%;
-    padding: 5px;
-    border-radius: 20px;
-    color: #FFF;
-    font-family: Comfortaa;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-#description-commune button:hover {
-    background-color: #558154;
-}
-
-#description-commune img {
-    position: relative;
-    left: 5px;
-}
-
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1190px) {
     #description-commune {
-        max-height: 390px;
+       width: 80%;
+    }
+
+    #img-carte {
+        width: 40%;
+    }
+
+    .description-choix {
+        width: 65%;
     }
 }
 
-@media screen and (max-width: 1715px) {
-    #description-commune {
-        max-height: 410px;
+@media screen and (max-width: 928px) {
+    #choix-agglo {
+        width: 40%;
     }
 }
 
-@media screen and (max-width: 1458px) {
+@media screen and (max-width: 780px) {
+    .titre-commune {
+        margin-bottom: 50px;    
+    }
+
+    .nos-communes {
+        flex-direction: column;
+    }
+
+    .description-choix {
+        margin-top: 130px;
+        width: 75%;
+    }
+
+    #img-carte {
+        width: 75%;
+    }
+
     #description-commune {
-        width: 82%;
-        max-height: 345px;
+        width: 100%;
     }
 
     #choix-agglo {
-        width: 30%;
-    }
-}
-
-@media screen and (max-width: 1377px) {
-}
-
-@media screen and (max-width: 1347px) {
-    #description-commune {
-        /* background-color: red; */
-    }
-}
-
-@media screen and (max-width: 1700px) {
-    #description-commune {
-        /* background-color: red; */
+        width: 55%;
     }
 }
 /********************Fin Communes********************/
@@ -188,8 +167,8 @@ body {
 /********************Debut Footer********************/
 footer {
     position: relative;
-    /* top: 100%; */
     border-top: 1px solid #ffffff;
+    top: 100%;
     width: 100%;
     background-color: #585858;
     color: rgb(255, 255, 255);
@@ -288,11 +267,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 0;
-    height: 0;
     background-color: #2b6d234b;
     border-radius: 50%;
-    opacity: 0;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease;
 }
@@ -460,5 +436,4 @@ footer {
         width: 12%;
     }
 }
-
 /********************Fin Footer********************/
