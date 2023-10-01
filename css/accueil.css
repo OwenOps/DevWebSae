@@ -43,8 +43,11 @@ body {
     margin-bottom: 150px;
 }
 
-#img-carte {
-    width: 35%;
+iframe {
+    height: 700px; 
+    width: 40%;
+    position: relative;
+    top: 50px;
 }
 
 .description-choix {
@@ -116,50 +119,88 @@ body {
     text-decoration: underline !important;
 }
 
+@media screen and (max-width: 1580px) {
+    iframe {
+        width: 45%;
+    }
+}
+
 @media screen and (max-width: 1190px) {
-    #description-commune {
-       width: 80%;
-    }
-
-    #img-carte {
-        width: 40%;
-    }
-
-    .description-choix {
-        width: 65%;
-    }
-}
-
-@media screen and (max-width: 928px) {
-    #choix-agglo {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .titre-commune {
-        margin-bottom: 50px;    
-    }
-
-    .nos-communes {
-        flex-direction: column;
-    }
-
-    .description-choix {
-        margin-top: 130px;
-        width: 75%;
-    }
-
-    #img-carte {
-        width: 75%;
-    }
-
-    #description-commune {
-        width: 100%;
+    iframe {
+        top: 80px;
+        width: 60%;
     }
 
     #choix-agglo {
         width: 55%;
+    }
+
+    #description-commune {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 958px) {
+    iframe {
+        top: 160px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .nos-communes {
+        flex-direction: column;
+    }
+
+    iframe {
+        top: 40px;
+        width: 80%;
+    }
+
+    #choix-agglo {
+        width: 40%;
+    }
+
+    .description-choix {
+        width: 100%;
+    }
+
+    .titre-commune {
+        margin-bottom: inherit;    
+    }
+}
+
+@media screen and (max-width: 623px) {
+    iframe {
+        top: 60px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    iframe {
+        top: inherit;
+    }
+
+    .description-choix {
+        position: relative;
+        bottom: 180px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .description-choix {
+        position: relative;
+        bottom: 250px;
+    }
+
+    #choix-agglo {
+        width: 50%;
     }
 }
 /********************Fin Communes********************/
@@ -367,7 +408,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 631px) {
     .newsletter {
         flex-direction: column;
     }
