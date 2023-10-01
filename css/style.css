@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none
+}
+
+body {
+    font-family:'Segoe UI';
+    height: 300vh;
+}
+
+/* ------------------------------------------------ DEBUT IMAGE DE BACKGROUND ------------------------------------------------ */
+
+header {
+    height : 100vh;
+    width : 100%;
+    background-image: url(../img/cathedrale.jpg);
+    background-size: cover;
+}
+
+/* ------------------------------------------------ FIN IMAGE DE BACKGROUND ------------------------------------------------ */
+
+
+/* ------------------------------------------------ DEBUT DE LA NAVBAR ------------------------------------------------ */
+
+.navbar {
+    padding: 0px 15px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-sizing: border-box; */
+}
+
+.navbar .nav-links {
+    display : flex;
+}
+
+.navbar .nav-links ul{ /* Ciblage des icônes à droite*/
+    display: flex; /* pour les mettre en ligne*/
+    margin-top: 30px;    
+}
+
+.navbar .nav-links ul li{ /* Ciblage de chaque icône*/
+    margin: 0 12px; 
+}
+
+.v-line{
+    border-left: 3px solid white;
+    height: 80%;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* -------- DEBUT DE LA BARRE DE RECHERCHE ----------- */
+.search {
+    display : flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.search input { /* Ciblage de la barre de recherche */
+    width : 280px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    border-color: white;
+    border-style: none;
+    background-color: white;
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+
+.search i { /* Ciblage de la loupe */
+    position: absolute;
+    margin: 240px;
+    padding-bottom: 10px;
+}
+
+/* -------- FIN DE LA BARRE DE RECHERCHE ----------- */
+
+/* -------- DEBUT DES LOGO ANIMES ----------- */
+
+#btn_linkedin
+{
+    width : 36px;
+    height : 36px;
+    display : block; 
+    background : url("../img/logo_linkedin.png") no-repeat;
+
+}
+
+#btn_linkedin:hover
+{
+    background-image : url("../img/linkedin.png");
+}
+
+#btn_facebook
+{
+    width : 36px;
+    height : 36px;
+    display : block;
+    background : url("../img/logo_facebook.png") no-repeat;
+}
+
+#btn_facebook:hover
+{
+    background-image : url("../img/facebook.png");
+}
+
+#btn_flux
+{
+    width: 36px;
+    height: 36px;
+    display : block;
+    background : url("../img/logo_flux.png") no-repeat;
+}
+
+#btn_flux:hover
+{
+
+    background-image : url("../img/rss.png");
+}
+
+/* -------- FIN DES LOGO ANIMES ----------- */
+
+/* ------------------------------------------------ FIN DE LA NAVBAR ------------------------------------------------ */
+
+/* --------------------------------------- DEBUT DE LA BARRE D'ACCES RAPIDE ----------------------------------------- */
+
+.acces {
+    height: 22%;
+    width: 50%;
+    left : 25%;
+    top: 70%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-color: #ffffffed;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.955);
+}
+
+.acces ul {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.acces ul img{
+    margin-bottom: 13px;
+}
+
+.acces ul img:hover{
+    transform: scale(1.13);
+}
+
+.acces ul li a {
+    transition: color 1s;
+    text-decoration: none;
+    color : #3858bbed;
+}
+
+.acces ul li a:hover {
+    color: green;
+}
+
+/* ----------------------------------------- FIN DE LA BARRE D'ACCES RAPIDE ----------------------------------------- */
+
+h1 {
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    width: 37%;
+    font-family:"Gill Sans", "Gill Sans MT", sans-serif;
+    font-style: italic;
+    font-weight: 250px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #415192ab;
+}
+  
+/* h1::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: #dadada;
+    right: 1px;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+  
+  @keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }  */
