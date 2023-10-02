@@ -36,173 +36,21 @@ body {
     top: 20px;
 }
 
-.nos-communes {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 150px;
-}
-
 iframe {
-    height: 700px; 
-    width: 40%;
-    position: relative;
-    top: 50px;
+    width: 100%;
+    height: 100%;
 }
 
-.description-choix {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-#choix-agglo {
-    position: relative;
-    bottom: 75px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 50px;
-    width: 20%;
-    background: #FFF;
-    height: 30px;
-    color: #000;
-    font-family: Comfortaa;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#description-commune {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    border-radius: 30px;
-    background: #F0EDED;
-    max-height: 390px;
-    overflow: auto;
-    width: 70%;
-}
-
-#description-commune h4 {
-    text-align: center;
-    margin: 15px 0;
-    color: #538E52;
-    font-family: Comfortaa;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-#description-commune p,
-.liste-clef {
-    display: flex;
-    margin: 0 12px;
-    color: #585858;
-    font-family: Comfortaa;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-}
-
-.liste-clef,
-.contact-ville  {
-    flex-direction: column;
-}
-
-.contact-ville {
-    text-align: center;
-}
-
-.lien-commune {
-    cursor: pointer;
-    margin-bottom: 12px;
-    color: #007FFF !important;
-    text-decoration: underline !important;
-}
-
-@media screen and (max-width: 1580px) {
+@media screen and (max-width: 1000px) {
     iframe {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 1190px) {
-    iframe {
-        top: 80px;
-        width: 60%;
-    }
-
-    #choix-agglo {
-        width: 55%;
-    }
-
-    #description-commune {
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 958px) {
-    iframe {
-        top: 160px;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .nos-communes {
-        flex-direction: column;
-    }
-
-    iframe {
-        top: 40px;
-        width: 80%;
-    }
-
-    #choix-agglo {
-        width: 40%;
-    }
-
-    .description-choix {
-        width: 100%;
+        height: 180%;
     }
 
     .titre-commune {
-        margin-bottom: inherit;    
+        margin-bottom: 15px;
     }
 }
 
-@media screen and (max-width: 623px) {
-    iframe {
-        top: 60px;
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    iframe {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    iframe {
-        top: inherit;
-    }
-
-    .description-choix {
-        position: relative;
-        bottom: 180px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .description-choix {
-        position: relative;
-        bottom: 250px;
-    }
-
-    #choix-agglo {
-        width: 50%;
-    }
-}
 /********************Fin Communes********************/
 
 /********************Debut Footer********************/
@@ -477,4 +325,5 @@ footer {
         width: 12%;
     }
 }
+
 /********************Fin Footer********************/
