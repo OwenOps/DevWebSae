@@ -36,132 +36,21 @@ body {
     top: 20px;
 }
 
-.nos-communes {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 150px;
+iframe {
+    width: 100%;
+    height: 100%;
 }
 
-#img-carte {
-    width: 35%;
-}
-
-.description-choix {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-#choix-agglo {
-    position: relative;
-    bottom: 75px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 50px;
-    width: 20%;
-    background: #FFF;
-    height: 30px;
-    color: #000;
-    font-family: Comfortaa;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#description-commune {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    border-radius: 30px;
-    background: #F0EDED;
-    max-height: 390px;
-    overflow: auto;
-    width: 70%;
-}
-
-#description-commune h4 {
-    text-align: center;
-    margin: 15px 0;
-    color: #538E52;
-    font-family: Comfortaa;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-#description-commune p,
-.liste-clef {
-    display: flex;
-    margin: 0 12px;
-    color: #585858;
-    font-family: Comfortaa;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-}
-
-.liste-clef,
-.contact-ville  {
-    flex-direction: column;
-}
-
-.contact-ville {
-    text-align: center;
-}
-
-.lien-commune {
-    cursor: pointer;
-    margin-bottom: 12px;
-    color: #007FFF !important;
-    text-decoration: underline !important;
-}
-
-@media screen and (max-width: 1190px) {
-    #description-commune {
-       width: 80%;
+@media screen and (max-width: 1000px) {
+    iframe {
+        height: 180%;
     }
 
-    #img-carte {
-        width: 40%;
-    }
-
-    .description-choix {
-        width: 65%;
-    }
-}
-
-@media screen and (max-width: 928px) {
-    #choix-agglo {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 780px) {
     .titre-commune {
-        margin-bottom: 50px;    
-    }
-
-    .nos-communes {
-        flex-direction: column;
-    }
-
-    .description-choix {
-        margin-top: 130px;
-        width: 75%;
-    }
-
-    #img-carte {
-        width: 75%;
-    }
-
-    #description-commune {
-        width: 100%;
-    }
-
-    #choix-agglo {
-        width: 55%;
+        margin-bottom: 15px;
     }
 }
+
 /********************Fin Communes********************/
 
 /********************Debut Footer********************/
@@ -367,7 +256,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 631px) {
     .newsletter {
         flex-direction: column;
     }
@@ -436,4 +325,5 @@ footer {
         width: 12%;
     }
 }
+
 /********************Fin Footer********************/
