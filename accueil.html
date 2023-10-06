@@ -11,14 +11,41 @@
 </head>
 
 <body>
-    <!--**************************************************Debut Communes**************************************************-->
-    <div class="titre-commune">
-        <p>
-            Nos Communes
-        </p>
+    <!----------------------------------------------------Debut chiffres clefs---------------------------------------------------->
+    <div id="container-chiffre">
+        <div class="titre" id="titre-chiffre">
+            <h4 class="titre-commune">
+                Chiffres-clés
+            </h4>
+        </div>
+        <div id="container-liste">
+            <ul id="liste-chiffre">
+                <li>
+                    65 216
+                    <p>Actifs</p>
+                </li>
+                <li>
+                    140 347
+                    <p>Habitants</p>
+                </li>
+                <li>
+                    66
+                    <p>Communes</p>
+                </li>
+            </ul>
+        </div>
     </div>
+    <!----------------------------------------------------Fin chiffres clefs---------------------------------------------------->
+
+    <!----------------------------------------------------Debut Communes---------------------------------------------------->
+    <div class="titre">
+        <h4 class="titre-commune">
+            Nos Communes
+        </h4>
+    </div>
+    <a href="territoire"></a>
     <iframe src="communes.html" frameborder="0"></iframe>
-    <!--**************************************************Fin Communes**************************************************-->
+    <!----------------------------------------------------Fin Communes---------------------------------------------------->
     <footer>
         <div class="container-footer">
             <div class="container-adresse">
@@ -41,11 +68,11 @@
                     <p> S'abonner à la newsletter : </p>
                     <input type="text" name="news-letter" id="input-news" placeholder="Saisissez votre email..."
                         style="font-weight: bold; font-size: 15px">
-                    <button id="btn-news">
+                    <button>
                         <img src="img/logo-verifie.png" alt="logo-verifie" style="width: 40%;">
                     </button>
                 </div>
-                <div id="test">
+                <div>
                     <ul class="liste-liens">
                         <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/accessibilite"
                             target="_blank">
@@ -56,14 +83,15 @@
                             <li>Plan du site</li>
                         </a>
                         <a href="https://www.chartres-metropole.fr/contacts" target="_blank">
-                            <li id="troisieme-li">Contact</li>
+                            <li>Contact</li>
                         </a>
                         <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/mentions-legales"
                             target="_blank">
-                            <li id="avant-dernier-li">Mentions légales</li>
+                            <li>Mentions légales</li>
                         </a>
-                        <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/credits" target="_blank">
-                            <li id="dernier-li">Crédits</li>
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/credits"
+                            target="_blank">
+                            <li>Crédits</li>
                         </a>
                     </ul>
                 </div>

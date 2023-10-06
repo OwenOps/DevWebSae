@@ -12,28 +12,82 @@ a {
 body {
     height: 100vh;
     background-size: cover;
+    background-color: #D9D9D9;
     background-attachment: fixed;
     scroll-behavior: smooth;
 }
 
-/********************Debut Communes********************/
-.titre-commune {
-    margin: 50px 0 130px;
+/*--------------------Debut Chiffre cles--------------------*/
+#container-liste {
+    background-color: white;
+}
+
+#liste-chiffre {
     display: flex;
-    justify-content: center;
-    color: #000000;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#liste-chiffre li{
+    text-decoration: none;
+    text-align: center;
+    font-size: 55px;
+    line-height: 35px;
+    margin: 30px 0;
+    font-family: Croissant One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #585858;
+}
+
+#liste-chiffre p {
+    font-size: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #538e52a7;
+    color: #585858;
+    font-family: Comfortaa;
+}
+
+@media screen and (max-width: 720px) {
+    #liste-chiffre {
+        flex-direction: column;
+    }
+
+    #liste-chiffre li {
+        flex-direction: column;
+        width: 50%;
+        margin: 30px auto;
+    }
+
+    #titre-chiffre {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    #liste-chiffre li:nth-child(2) {
+        font-size: 50px;
+    }
+}
+/*--------------------Fin Chiffre cles--------------------*/
+
+/*--------------------Debut Communes--------------------*/
+.titre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titre-commune {
+    color: #28294C;
     font-family: Comfortaa;
     font-size: 35px;
     font-weight: 400;
-}
-
-.titre-commune::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.308);
-    top: 20px;
+    margin: 40px auto;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.381);
+    padding-top: 40px;
+    width: 65%;
 }
 
 iframe {
@@ -51,13 +105,12 @@ iframe {
     }
 }
 
-/********************Fin Communes********************/
+/*--------------------Fin Communes--------------------*/
 
-/********************Debut Footer********************/
+/*--------------------Debut Footer--------------------*/
 footer {
     position: relative;
     border-top: 1px solid #ffffff;
-    top: 100%;
     width: 100%;
     background-color: #585858;
     color: rgb(255, 255, 255);
@@ -168,12 +221,6 @@ footer {
     opacity: 1;
 }
 
-.test {
-    display: flex;
-    justify-content: start;
-    text-align: start;
-}
-
 .container-liens {
     position: relative;
     left: 20%;
@@ -182,30 +229,13 @@ footer {
 .liste-liens li {
     list-style-type: none;
     position: relative;
-    margin-right: 30px;
-}
-
-.liste-liens li::after {
-    content: "";
-    position: absolute;
-    background-color: #ffffff9c;
-    width: 15px;
-    height: 1px;
-    bottom: 8px;
-    left: 108%;
+    border-right: 1px solid #ffffffb9;
+    margin: 10px;
+    padding-right: 25px;
 }
 
 .liste-liens li:hover {
     color: #538E52;
-}
-
-#dernier-li::after {
-    display: none;
-}
-
-/*Pour centrer le trait a droite du contact*/
-#troisieme-li::after {
-    left: 115%;
 }
 
 @media screen and (max-width: 1295px) {
@@ -243,7 +273,6 @@ footer {
 
     .container-liens {
         right: inherit;
-        left: 25px;
     }
 
     .newsletter {
@@ -256,7 +285,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 631px) {
+@media screen and (max-width: 650px) {
     .newsletter {
         flex-direction: column;
     }
@@ -270,10 +299,6 @@ footer {
     .liste-liens {
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-    #dernier-li {
-        margin-right: inherit;
     }
 
     .newsletter p,
@@ -302,28 +327,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 507px) {
-    #avant-dernier-li::after {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 457px) {
-    #avant-dernier-li::after {
-        display: block;
-    }
-
-    #troisieme-li {
-        margin-right: 16px;
-    }
-
-    #troisieme-li::after {
-        display: none;
-    }
-
     .newsletter button {
         width: 12%;
     }
 }
-
-/********************Fin Footer********************/
+/*--------------------Fin Footer--------------------*/

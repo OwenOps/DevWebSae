@@ -178,6 +178,16 @@ area {
     .mapping {
         height: 450px;
     }
+
+    #choix-agglo {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #choix-agglo option{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 375px) {
