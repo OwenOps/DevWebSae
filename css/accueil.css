@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -9,17 +9,17 @@
 
 body {
     font-family:'Segoe UI';
-    height: 300vh;
+    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
+    background-color: #D9D9D9;
+    scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
-
-
 /* ------------------------------------------------ DEBUT IMAGE DE BACKGROUND ------------------------------------------------ */
 
 header {
@@ -209,3 +209,321 @@ h1 {
 } */
   
 /* ----------------------------------------- FIN TEXTE ANIME ----------------------------------------- */
+
+/*-----------------------------------------Debut Chiffre cles-----------------------------------------*/
+#container-liste {
+    background-color: white;
+}
+
+#liste-chiffre {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#liste-chiffre li{
+    text-decoration: none;
+    text-align: center;
+    font-size: 55px;
+    line-height: 35px;
+    margin: 30px 0;
+    font-family: Croissant One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #585858;
+}
+
+#liste-chiffre p {
+    font-size: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #538e52a7;
+    color: #585858;
+    font-family: Comfortaa;
+}
+
+@media screen and (max-width: 720px) {
+    #liste-chiffre {
+        flex-direction: column;
+    }
+
+    #liste-chiffre li {
+        flex-direction: column;
+        width: 50%;
+        margin: 30px auto;
+    }
+
+    #titre-chiffre {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    #liste-chiffre li:nth-child(2) {
+        font-size: 50px;
+    }
+}
+/*-----------------------------------------Fin Chiffre cles-----------------------------------------*/
+
+/*-----------------------------------------Debut Communes-----------------------------------------*/
+.titre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titre-commune {
+    color: #28294C;
+    font-family: Comfortaa;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 40px auto;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.381);
+    padding-top: 40px;
+    width: 65%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        height: 180%;
+    }
+
+    .titre-commune {
+        margin-bottom: 15px;
+    }
+}
+
+/*-----------------------------------------Fin Communes-----------------------------------------*/
+
+/*-----------------------------------------Debut Footer-----------------------------------------*/
+footer {
+    position: relative;
+    border-top: 1px solid #ffffff;
+    width: 100%;
+    background-color: #585858;
+    color: rgb(255, 255, 255);
+    flex-shrink: 0;
+}
+
+.newsletter,
+.liste-liens,
+.container-footer {
+    display: flex;
+}
+
+.newsletter p,
+.liste-liens,
+.container-adresse p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-footer {
+    align-items: center;
+    justify-content: start; /* Espace entre les deux containers */
+}
+
+.container-adresse {
+    padding: 30px;
+}
+
+.container-adresse img {
+    width: 25%;
+    margin-top: 30px;
+}
+
+.logo-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+}
+
+.logo-footer p {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.container-adresse::after {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 18%;
+    height: 75%;
+    width: 2px;
+    background-color: #ffffffb9;
+}
+
+.newsletter {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.newsletter p {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.newsletter input,
+.newsletter button {
+    position: relative;
+    bottom: 4px;
+}
+
+.newsletter button {
+    width: 9%;
+    border-radius: 10px;
+    background-color: #538E52;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.newsletter button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.newsletter button:focus {
+    outline: none;
+}
+
+.newsletter button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #2b6d234b;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.newsletter button:hover:after {
+    width: 210px;
+    height: 200px;
+    opacity: 1;
+}
+
+.container-liens {
+    position: relative;
+    left: 15%;
+}
+
+.liste-liens li {
+    list-style-type: none;
+    position: relative;
+    border-right: 1px solid #ffffffb9;
+    margin: 10px;
+    padding-right: 25px;
+}
+
+.liste-liens li:hover {
+    color: #538E52;
+}
+
+@media screen and (max-width: 1295px) {
+    .container-adresse::after {
+        left: 25%;
+    }
+
+    .container-liens {
+        left: inherit;
+    }
+}
+
+@media screen and (max-width: 1069px) {
+    .container-liens {
+        right: 9%;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .container-adresse {
+        display: flex;
+        position: relative;
+    }
+
+    .container-adresse::after {
+        height: 2px;
+        width: 90%;
+        left: 5%;
+        top: 90%;
+    }
+
+    .container-liens {
+        right: inherit;
+    }
+
+    .newsletter {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .container-liens {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .container-liens {
+        left: inherit;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .liste-liens {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .newsletter p,
+    .newsletter input {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .adresse {
+        position: relative;
+        text-align: center;
+    }
+
+    .logo-footer {
+        justify-content: center;
+    }
+
+    .container-adresse {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-adresse::after {
+        top: 100%;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .newsletter button {
+        width: 12%;
+    }
+}
+/*-----------------------------------------Fin Footer-----------------------------------------*/

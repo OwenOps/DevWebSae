@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-    	<meta charset="utf-8">
-    	<title> Accueil </title>
-		<link rel="stylesheet" type="text/css" href="css_bs/bootstrap.min.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css_bs/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/accueil.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="js/accueil.js"></script>
+    <title>Chartres</title>
 	</head>
 
 	<body>
-
 		<!--------------------------------------------------DEBUT DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
 		<header>
 			<nav class="navbar">
@@ -78,9 +83,97 @@
 			</ul>
 		</div>
 		<!------------------------------------------------------FIN DE LA BARRE D'ACCES RAPIDE--------------------------------------------------------------------------------->
+    
+    <!------------------------------------------------------Debut chiffres clefs------------------------------------------------------>
+    <div id="container-chiffre">
+        <div class="titre" id="titre-chiffre">
+            <h4 class="titre-commune">
+                Chiffres-clés
+            </h4>
+        </div>
+        <section class="counter-section">
+            <div id="container-liste">
+                <ul id="liste-chiffre">
+                    <li>
+                        <span class="num">65.216</span>
+                        <p>Actifs</p>
+                    </li>
+                    <li>
+                        <span class="num">140.347</span>
+                        <p>Habitants</p>
+                    </li>
+                    <li>
+                        <span class="num">66</span>
+                        <p>Communes</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!------------------------------------------------------Fin chiffres clefs------------------------------------------------------>
 
-    </body>
-
-	<script src=script.js></script>
-
+    <!------------------------------------------------------Debut Communes------------------------------------------------------>
+    <div class="titre">
+        <h4 class="titre-commune">
+            Nos Communes
+        </h4>
+    </div>
+    <a href="territoire"></a>
+    <iframe src="communes.html" frameborder="0"></iframe>
+    <!------------------------------------------------------Fin Communes------------------------------------------------------>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="container-adresse">
+                <div class="logo-footer">
+                    <img src="img/logo-chartres.png" alt="logo-chartres">
+                    <p>
+                        <span style="font-weight: bold;"> Chartres </span> <br>
+                        <span style="font-size: 21px;"> Métropole </span>
+                    </p>
+                </div>
+                <p class="adresse">
+                    <span> Hotel d'Agglomération </span><br>
+                    Place des Halles <br>
+                    28019 Chartres Cedex <br><br>
+                    Tél : 02 37 23 40 00
+                </p>
+            </div>
+            <div class="container-liens">
+                <div class="newsletter">
+                    <p> S'abonner à la newsletter : </p>
+                    <input type="text" name="news-letter" id="input-news" placeholder="Saisissez votre email..."
+                        style="font-weight: bold; font-size: 15px">
+                    <button id="btn-news">
+                        <img src="img/logo-verifie.png" alt="logo-verifie" style="width: 40%;">
+                    </button>
+                </div>
+                <div>
+                    <ul class="liste-liens">
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/accessibilite"
+                            target="_blank">
+                            <li>Accessiblité</li>
+                        </a>
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/plan-du-site"
+                            target="_blank">
+                            <li>Plan du site</li>
+                        </a>
+                        <a href="https://www.chartres-metropole.fr/contacts" target="_blank">
+                            <li>Contact</li>
+                        </a>
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/mentions-legales"
+                            target="_blank">
+                            <li>Mentions légales</li>
+                        </a>
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/credits"
+                            target="_blank">
+                            <li>Crédits</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+ 
 </html>

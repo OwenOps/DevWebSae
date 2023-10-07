@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/map/carto.js"></script>
+    <link rel="stylesheet" href="css/map/map.css">
+    <title>communes</title>
+</head>
+
+<body>
+    <div class="nos-communes">
+        <div class="mapping">
+            <div id="image_map" style="background-image: url(img/map/chartres.png);">
+                <img id="Map" src="img/map/map-transparent.png" alt="" usemap="#Map">
+            </div>
+            <map name="Map" id="Map">
+                <area data-image="sandarville" alt="Sandarville" title="Sandarville" href="#"
+                    coords="52,174,48,174,42,183,37,186,34,190,37,192,32,195,37,198,42,205,43,200,47,198,50,194,52,190,57,185,56,180,52,176"
+                    shape="poly" data="area_map_2" onmouseover="change_image('sandarville')" onmouseout="hide_image()">
+                <area data-image="ermenonvillelaGrande" alt="Ermenonville-la-Grande" title="Ermenonville-la-Grande"
+                    href="#"
+                    coords="68,206,65,206,62,208,60,208,59,206,55,208,52,208,50,207,46,203,44,200,47,205,46,200,48,199,52,192,56,188,60,182,65,185,71,185,72,190,75,191,75,195,75,198,68,198"
+                    shape="poly" data="area_map_3" onmouseover="change_image('ermenonvillelaGrande')"
+                    onmouseout="hide_image()">
+                <area data-image="labourdinieresaintloup" alt="La Bourdinière-Saint-Loup"
+                    title="La Bourdinière-Saint-Loup" href="#"
+                    coords="88,191,86,190,83,192,76,193,75,197,75,200,70,200,68,207,66,207,66,210,69,214,71,216,74,214,75,222,79,223,78,226,84,228,84,230,88,230,90,228,94,229,95,231,98,230,98,223,99,222,96,214,99,214,98,209,94,209,90,203,91,199,87,195"
+                    shape="poly" data="area_map_4" onmouseover="change_image('labourdinieresaintloup')"
+                    onmouseout="hide_image()">
+                <area data-image="vitrayenbeauce" alt="Vitray-en-Beauce" title="Vitray-en-Beauce" href="#"
+                    coords="83,228,78,227,76,230,72,230,72,235,67,238,62,240,62,242,66,241,67,244,73,247,76,251,80,251,82,255,84,249,91,251,88,245,91,240,90,233,92,230,86,232,83,231"
+                    shape="poly" data="area_map_5" onmouseover="change_image('vitrayenbeauce')"
+                    onmouseout="hide_image()">
+                <area data-image="meslaylevidame" alt="Meslay-le-Vidame" title="Meslay-le-Vidame" href="#"
+                    coords="119,256,116,257,115,254,110,254,110,243,105,242,101,247,97,247,92,248,90,246,92,240,91,233,94,230,96,233,99,231,99,228,101,229,103,233,106,233,109,235,114,232,118,234,122,233,123,235,127,238,127,244,123,248,120,251,113,244"
+                    shape="poly" data="area_map_6" onmouseover="change_image('meslaylevidame')"
+                    onmouseout="hide_image()">
+                <area data-image="fresnaylecomte" alt="Fresnay-le-Comte" title="Fresnay-le-Comte" href="#"
+                    coords="113,211,104,211,102,209,99,209,100,214,97,215,100,223,99,223,99,227,103,228,103,230,106,231,109,233,114,231,118,233,121,232,116,229,117,226,113,223,113,219,113,216,111,214"
+                    shape="poly" data="area_map_7" onmouseover="change_image('fresnaylecomte')"
+                    onmouseout="hide_image()">
+                <area data-image="bonce" alt="Boncé" title="Boncé" href="#"
+                    coords="143,224,143,216,140,217,135,212,131,209,130,213,119,211,118,208,114,211,113,214,116,215,114,218,114,224,118,226,118,229,122,231,126,226,129,226,130,220,135,222,139,222"
+                    shape="poly" data="area_map_8" onmouseover="change_image('bonce')" onmouseout="hide_image()">
+                <area data-image="theuville" alt="Theuville" title="Theuville" href="#"
+                    coords="169,180,166,182,162,183,159,181,155,187,146,189,143,191,145,201,147,206,142,206,144,223,152,223,157,233,161,225,165,227,165,227,165,223,171,218,169,210,177,210,179,213,182,215,183,212,180,209,183,199,180,198,179,194,173,194,165,192,171,182"
+                    shape="poly" data="area_map_9" onmouseover="change_image('theuville')" onmouseout="hide_image()">
+                <area data-image="allonnes" alt="Allonnes" title="Allonnes" href="#"
+                    coords="205,217,203,220,198,216,184,212,180,209,182,204,184,199,182,196,184,193,185,190,188,192,194,193,201,195,204,199,201,206,198,209"
+                    shape="poly" data="area_map_10" onmouseover="change_image('allonnes')" onmouseout="hide_image()">
+                <area data-image="boisvillelaSaintPere" alt="Boisville-la-Saint-Père" title="Boisville-la-Saint-Père"
+                    href="#"
+                    coords="232,228,227,228,225,230,218,228,214,222,212,224,199,209,202,206,205,200,202,195,205,191,206,186,204,182,206,180,208,181,211,177,226,186,224,189,224,208,231,210,232,213,229,217,228,224"
+                    shape="poly" data="area_map_11" onmouseover="change_image('boisvillelaSaintPere')"
+                    onmouseout="hide_image()">
+                <area data-image="prunaylegillon" alt="Prunay-le-Gillon" title="Prunay-le-Gillon" href="#"
+                    coords="179,158,177,165,169,164,166,166,166,171,162,183,166,182,169,179,173,181,166,191,173,193,179,193,181,197,185,188,188,191,201,194,204,190,205,186,203,182,205,179,208,180,210,177"
+                    shape="poly" data="area_map_12" onmouseover="change_image('prunaylegillon')"
+                    onmouseout="hide_image()">
+                <area data-image="francourville" alt="Francourville" title="Francourville" href="#"
+                    coords="213,137,211,139,206,135,202,136,199,141,194,139,189,148,184,147,179,157,207,174,208,163,207,161,210,159,209,156,213,155,213,151,211,150,212,145,216,139"
+                    shape="poly" data="area_map_13" onmouseover="change_image('francourville')"
+                    onmouseout="hide_image()">
+                <area data-image="berchereslespierres" alt="Berchères-les-Pierres" title="Berchères-les-Pierres"
+                    href="#"
+                    coords="144,150,165,172,163,177,161,182,159,179,154,187,145,188,142,190,138,191,134,183,137,180,135,177,134,172,131,166,134,164,134,160,138,159,138,155,142,152"
+                    shape="poly" data="area_map_14" onmouseover="change_image('berchereslespierres')"
+                    onmouseout="hide_image()">
+                <area data-image="moinvillelajeulin" alt="Moinville-la-Jeulin" title="Moinville-la-Jeulin" href="#"
+                    coords="225,184,208,175,208,164,210,162,213,164,215,162,217,166,221,166,224,171,222,173,226,175,223,179,227,181"
+                    shape="poly" data="area_map_15" onmouseover="change_image('moinvillelajeulin')"
+                    onmouseout="hide_image()">
+                <area data-image="santeuil" alt="Santeuil" title="Santeuil" href="#"
+                    coords="248,173,251,162,244,159,241,162,234,160,230,158,227,165,222,167,225,170,224,173,227,175,225,179,227,181,230,178,233,180,236,174,242,172"
+                    shape="poly" data="area_map_16" onmouseover="change_image('santeuil')" onmouseout="hide_image()">
+                <area data-image="denonville" alt="Denonville" title="Denonville" href="#"
+                    coords="270,175,263,171,261,174,258,171,251,168,252,160,255,160,254,155,257,150,267,151,270,149,275,154,278,159,284,164,279,166,274,168"
+                    shape="poly" data="area_map_17" onmouseover="change_image('denonville')" onmouseout="hide_image()">
+                <area data-image="saintlegerdesaubees" alt="Saint-Léger-des-Aubées" title="Saint-Léger-des-Aubées"
+                    href="#"
+                    coords="251,161,244,158,241,161,234,159,236,154,232,154,232,150,230,143,232,138,233,135,233,131,237,126,238,128,236,133,249,136,252,133,254,136,254,140,251,141,248,147,250,149,249,152,252,152,254,155"
+                    shape="poly" data="area_map_18" onmouseover="change_image('saintlegerdesaubees')"
+                    onmouseout="hide_image()">
+                <area data-image="roinville" alt="Roinville" title="Roinville" href="#"
+                    coords="252,132,249,135,237,132,240,128,237,124,240,119,237,114,240,112,248,119,255,123,258,122,254,127,256,131,255,134"
+                    shape="poly" data="area_map_19" onmouseover="change_image('roinville')" onmouseout="hide_image()">
+                <area data-image="dammarie" alt="Dammarie" title="Dammarie" href="# "
+                    coords="143,214,140,215,134,210,130,209,129,212,120,210,118,207,113,211,104,211,102,208,95,208,91,204,93,199,88,196,89,192,93,190,101,179,107,182,111,180,114,178,117,180,118,184,123,184,125,188,129,185,131,189,133,186,135,189,137,192,142,191,143,200,146,205,142,205"
+                    shape="poly" data="area_map_20" onmouseover="change_image('dammarie')" onmouseout="hide_image()">
+                <area data-image="olle" alt="Ollé" title="Ollé" href="#"
+                    coords="34,144,32,141,23,143,26,146,20,147,18,146,15,153,12,152,8,154,4,158,3,162,9,161,10,165,12,164,12,169,15,168,15,172,19,171,20,173,24,171,23,170,27,168,35,163,31,158,32,153,30,148"
+                    shape="poly" data="area_map_21" onmouseover="change_image('olle')" onmouseout="hide_image()">
+                <area data-image="chauffours" alt="Chauffours" title="Chauffours" href="#"
+                    coords="47,161,52,151,52,148,46,142,42,145,35,145,31,149,33,153,33,159,35,162,42,164" shape="poly"
+                    data="area_map_22" onmouseover="change_image('chauffours')" onmouseout="hide_image()">
+                <area data-image="nogentsureure" alt="Nogent-sur-Eure" title="Nogent-sur-Eure" href="#"
+                    coords="56,169,51,167,51,163,48,160,52,151,52,148,58,144,64,145,62,147,67,152,72,158,81,160,75,161,69,157,62,162,61,166,58,166"
+                    shape="poly" data="area_map_23" onmouseover="change_image('nogentsureure')"
+                    onmouseout="hide_image()">
+                <area data-image="meslaylegrenet" alt="Meslay-le-Grenet" title="Meslay-le-Grenet" href="#"
+                    coords="65,174,62,173,58,172,55,166,60,165,63,161,65,157,68,155,79,157" shape="poly"
+                    data="area_map_24" onmouseover="change_image('meslaylegrenet')" onmouseout="hide_image()">
+                <area data-image="mignieres" alt="Mignières" title="Mignières" href="#"
+                    coords="84,159,81,165,71,176,66,183,71,185,72,188,76,191,83,190,86,189,90,190,94,187,98,181,94,177,88,176,90,172,88,171,90,167"
+                    shape="poly" data="area_map_25" onmouseover="change_image('mignieres')" onmouseout="hide_image()">
+                <area data-image="fontenaysureure" alt="Fontenay-sur-Eure" title="Fontenay-sur-Eure" href="#"
+                    coords="99,151,90,152,86,153,83,159,74,158,70,154,64,148,73,140,80,139,87,133,97,135,92,138,98,142,101,144"
+                    shape="poly" data="area_map_26" onmouseover="change_image('fontenaysureure')"
+                    onmouseout="hide_image()">
+                <area data-image="saintgeorgessureure" alt="Saint-Georges-sur-Eure" title="Saint-Georges-sur-Eure"
+                    href="#"
+                    coords="50,119,47,124,42,128,39,128,34,134,32,139,35,143,42,143,46,142,52,147,58,143,66,144,71,139,66,134,64,128,59,124,54,123,51,123"
+                    shape="poly" data="area_map_27" onmouseover="change_image('saintgeorgessureure')"
+                    onmouseout="hide_image()">
+                <area data-image="amilly" alt="Amilly" title="Amilly" href="#"
+                    coords="88,104,82,101,75,99,73,101,70,101,67,106,66,110,62,119,64,121,61,124,66,129,67,133,72,138,80,138,87,131,84,129,91,126,90,119,87,119,87,113,86,108"
+                    shape="poly" data="area_map_28" onmouseover="change_image('amilly')" onmouseout="hide_image()">
+                <area data-image="cintray" alt="Cintray" title="Cintray" href="#"
+                    coords="60,124,62,121,61,119,64,113,63,109,59,110,52,109,49,116,47,118,51,119,52,122,58,122,59,121"
+                    shape="poly" data="area_map_29" onmouseover="change_image('cintray')" onmouseout="hide_image()">
+                <area data-image="saintaubindesbois" alt="Saint-Aubin-des-Bois" title="Saint-Aubin-des-Bois" href="#"
+                    coords="49,83,46,85,46,89,41,90,39,100,34,104,28,105,27,109,24,111,34,117,46,118,49,114,52,108,58,109,62,108,65,110,68,100,58,99,58,96,61,95"
+                    shape="poly" data="area_map_30" onmouseover="change_image('saintaubindesbois')"
+                    onmouseout="hide_image()">
+                <area data-image="bailleauleveques" alt="Bailleau-l'Évêques" title="Bailleau-l'Évêques" href="#"
+                    coords="85,97,83,100,76,98,70,100,62,99,59,98,63,95,50,82,51,79,56,78,54,74,60,71,61,76,67,76,71,77,72,72,76,76,84,80,88,75,97,87,95,90,92,89,91,91,85,86,84,93"
+                    shape="poly" data="area_map_31" onmouseover="change_image('bailleauleveques')"
+                    onmouseout="hide_image()">
+                <area data-image="mittainvilliersverigny" alt="Mittainvilliers-Vérigny" title="Mittainvilliers-Vérigny"
+                    href="#"
+                    coords="65,61,54,44,47,43,41,42,40,46,37,45,32,53,28,57,25,60,23,64,22,69,16,76,21,76,22,80,28,84,30,80,40,88,46,89,46,85,49,82,47,78,41,79,39,66,46,59,53,60,56,57"
+                    shape="poly" data="area_map_32" onmouseover="change_image('mittainvilliersverigny')"
+                    onmouseout="hide_image()">
+                <area data-image="clevilliers" alt="Clévilliers" title="Clévilliers" href="#"
+                    coords="72,22,68,23,67,20,63,22,63,23,59,24,59,32,63,37,66,41,59,42,56,35,52,38,56,46,63,56,67,52,73,54,80,51,82,47,78,44,75,38,81,36"
+                    shape="poly" data="area_map_33" onmouseover="change_image('clevilliers')" onmouseout="hide_image()">
+                <area data-image="dangers" alt="Dangers" title="Dangers" href="#"
+                    coords="62,62,61,69,54,72,55,76,48,80,47,77,42,79,40,66,46,60,53,61,56,NaN" shape="poly"
+                    data="area_map_34" onmouseover="change_image('dangers')" onmouseout="hide_image()">
+                <area data-image="challet" alt="Challet" title="Challet" href="#"
+                    coords="99,47,94,46,87,51,83,43,82,46,79,44,77,38,82,37,76,27,97,27,101,30,102,35,98,38"
+                    shape="poly" data="area_map_35" onmouseover="change_image('challet')" onmouseout="hide_image()">
+                <area data-image="briconville" alt="Briconville" title="Briconville" href="#"
+                    coords="76,57,75,56,66,52,63,57,66,62,62,62,62,68,63,73,61,75,67,75,70,76,72,71,76,71,76,65,79,64,79,60"
+                    shape="poly" data="area_map_36" onmouseover="change_image('briconville')" onmouseout="hide_image()">
+                <area data-image="bercheressaintgermain" alt="Berchères-Saint-Germain" title="Berchères-Saint-Germain"
+                    href="#"
+                    coords="132,68,129,71,126,69,123,73,117,70,118,67,115,63,108,60,103,60,99,63,94,67,90,63,91,60,85,57,79,56,74,55,81,52,83,49,83,44,86,52,92,48,94,47,100,47,99,38,103,36,106,34,113,32,123,42,127,42,127,51,131,55,127,61,131,63,129,66"
+                    shape="poly" data="area_map_37" onmouseover="change_image('bercheressaintgermain')"
+                    onmouseout="hide_image()">
+                <area data-image="fresnaylegilmert" alt="Fresnay-le-Gilmert" title="Fresnay-le-Gilmert" href="#"
+                    coords="93,68,89,73,86,75,84,79,76,76,75,73,77,71,77,65,80,64,79,60,78,57,84,57,90,60,88,63"
+                    shape="poly" data="area_map_38" onmouseover="change_image('fresnaylegilmert')"
+                    onmouseout="hide_image()">
+                <area data-image="poisvilliers" alt="Poisvilliers" title="Poisvilliers" href="#"
+                    coords="112,83,116,79,114,77,118,72,114,71,117,68,114,66,114,64,111,64,108,61,103,61,94,68,90,75,95,83,99,81,99,79,103,78,105,80,108,79"
+                    shape="poly" data="area_map_39" onmouseover="change_image('poisvilliers')"
+                    onmouseout="hide_image()">
+                <area data-image="bouglainval" alt="Bouglainval" title="Bouglainval" href="#"
+                    coords="131,62,129,60,132,55,127,50,127,40,123,40,113,31,115,27,115,23,122,21,125,22,128,19,133,25,139,23,145,33,136,42,137,45,135,48,135,51,135,52"
+                    shape="poly" data="area_map_40" onmouseover="change_image('bouglainval')" onmouseout="hide_image()">
+                <area data-image="chartainvilliers" alt="Chartainvilliers" title="Chartainvilliers" href="#"
+                    coords="146,34,137,42,136,48,135,55,142,57,154,57,157,59,158,55,155,52,154,46,152,40,149,36"
+                    shape="poly" data="area_map_41" onmouseover="change_image('chartainvilliers')"
+                    onmouseout="hide_image()">
+                <area data-image="jouy" alt="Jouy" title="Jouy" href="#"
+                    coords="158,75,154,80,151,82,149,83,145,78,139,77,132,69,133,67,130,66,135,56,142,57,154,57,158,61,156,64,156,68"
+                    shape="poly" data="area_map_42" onmouseover="change_image('jouy')" onmouseout="hide_image()">
+                <area data-image="corancez" alt="Corancez" title="Corancez" href="#"
+                    coords="130,163,123,164,123,167,120,170,121,172,118,174,118,183,123,183,125,187,129,183,131,187,135,178,132,176,133,172"
+                    shape="poly" data="area_map_43" onmouseover="change_image('corancez')" onmouseout="hide_image()">
+                <area data-image="verleschartres" alt="Ver-lès-Chartres" title="Ver-lès-Chartres" href="#"
+                    coords="113,155,111,157,110,152,105,152,106,159,102,159,102,163,105,162,102,170,103,171,101,173,105,175,102,178,107,181,114,177,117,178,117,172,120,171,118,167,122,166,122,163,117,162,114,158"
+                    shape="poly" data="area_map_44" onmouseover="change_image('verleschartres')"
+                    onmouseout="hide_image()">
+                <area data-image="thivars" alt="Thivars" title="Thivars" href="#"
+                    coords="97,152,90,153,86,154,84,159,90,166,90,171,91,171,89,175,94,176,99,180,103,176,99,173,102,171,101,170,103,163,101,165,101,158,105,158,104,152"
+                    shape="poly" data="area_map_45" onmouseover="change_image('thivars')" onmouseout="hide_image()">
+                <area data-image="sours" alt="Sours" title="Sours" href="#"
+                    coords="173,119,170,123,165,123,165,128,157,127,151,130,148,135,148,138,146,140,150,144,151,145,145,149,164,169,166,164,170,163,175,163,183,147,189,147,190,142,190,136,186,135,187,132,182,128,179,125,176,126,177,121"
+                    shape="poly" data="area_map_46" onmouseover="change_image('sours')" onmouseout="hide_image()">
+                <area data-image="champseru" alt="Champseru" title="Champseru" href="#"
+                    coords="181,101,179,91,179,84,182,82,182,78,188,74,192,79,201,75,205,79,208,78,210,76,212,82,209,83,208,90,196,96,198,100,187,104,186,100"
+                    shape="poly" data="area_map_47" onmouseover="change_image('champseru')" onmouseout="hide_image()">
+                <area data-image="oinvillesousauneau" alt="Oinville-sous-Auneau" title="Oinville-sous-Auneau" href="#"
+                    coords="237,95,233,97,229,93,223,95,217,95,218,100,214,103,213,104,213,108,208,108,208,112,212,111,217,113,220,110,228,112,230,114,237,111,240,100"
+                    shape="poly" data="area_map_48" onmouseover="change_image('oinvillesousauneau')"
+                    onmouseout="hide_image()">
+                <area data-image="umpeau" alt="Umpeau" title="Umpeau" href="#"
+                    coords="203,118,193,119,188,108,188,104,199,100,198,96,212,89,213,92,211,93,213,95,216,95,217,100,212,103,212,107,207,107,207,112"
+                    shape="poly" data="area_map_49" onmouseover="change_image('umpeau')" onmouseout="hide_image()">
+                <area data-image="houvillelabranche" alt="Houville-la-Branche" title="Houville-la-Branche" href="#"
+                    coords="186,100,177,104,181,108,177,113,177,116,174,118,178,121,177,124,181,124,184,128,189,132,189,135,193,135,190,141,192,142,194,138,198,139,203,133,201,130,202,127,203,126,203,118,193,120,189,112,187,107"
+                    shape="poly" data="area_map_50" onmouseover="change_image('houvillelabranche')"
+                    onmouseout="hide_image()">
+                <area data-image="coltainville" alt="Coltainville" title="Coltainville" href="#"
+                    coords="177,66,173,71,171,76,159,75,155,81,152,83,147,85,150,87,158,90,157,93,163,100,162,103,170,103,180,101,177,93,178,84,181,82,182,77,187,73,184,69,180,66"
+                    shape="poly" data="area_map_51" onmouseover="change_image('coltainville')"
+                    onmouseout="hide_image()">
+                <area data-image="nogentlephaye" alt="Nogent-le-Phaye" title="Nogent-le-Phaye" href="#"
+                    coords="170,119,169,123,165,122,164,127,158,126,154,127,151,129,147,125,145,119,143,109,150,109,161,105,170,104,175,104,180,108,175,113,175,115"
+                    shape="poly" data="area_map_52" onmouseover="change_image('nogentlephaye')"
+                    onmouseout="hide_image()">
+                <area data-image="gellainville" alt="Gellainville" title="Gellainville" href="#"
+                    coords="149,130,147,134,147,138,145,140,149,144,146,147,141,152,137,155,134,158,130,157,127,149,131,148,129,143,132,140,129,134,132,135,130,132,133,124,141,128,143,126,147,126"
+                    shape="poly" data="area_map_53" onmouseover="change_image('gellainville')"
+                    onmouseout="hide_image()">
+                <area data-image="morancez" alt="Morancez" title="Morancez" href="#"
+                    coords="130,163,122,163,118,162,115,158,115,153,113,139,115,139,116,142,117,144,121,144,123,148,127,149,129,157,133,159"
+                    shape="poly" data="area_map_54" onmouseover="change_image('morancez')" onmouseout="hide_image()">
+                <area data-image="barjouville" alt="Barjouville" title="Barjouville" href="#"
+                    coords="99,150,102,144,99,142,100,139,112,139,114,153,111,156,111,152" shape="poly"
+                    data="area_map_55" onmouseover="change_image('barjouville')" onmouseout="hide_image()">
+                <area data-image="saintprest" alt="Saint-Prest" title="Saint-Prest" href="#"
+                    coords="132,71,129,72,126,71,123,73,119,72,116,77,117,79,113,84,113,91,115,91,115,95,119,95,119,98,126,92,129,97,132,93,134,96,141,94,142,90,146,90,147,83,143,79,138,78"
+                    shape="poly" data="area_map_56" onmouseover="change_image('saintprest')" onmouseout="hide_image()">
+                <area data-image="lecoudray" alt="Le Coudray" title="Le Coudray" href="#"
+                    coords="129,133,126,131,122,131,118,131,116,130,113,133,113,138,116,138,116,140,118,140,118,144,122,143,124,148,126,147,127,148,130,147,127,143,131,140,127,134"
+                    shape="poly" data="area_map_57" onmouseover="change_image('lecoudray')" onmouseout="hide_image()">
+                <area data-image="luisant" alt="Luisant" title="Luisant" href="#"
+                    coords="110,126,105,130,94,138,98,141,99,138,112,138,113,133,115,128,111,128" shape="poly"
+                    data="area_map_58" onmouseover="change_image('luisant')" onmouseout="hide_image()">
+                <area data-image="luce" alt="Lucé" title="Lucé" href="#"
+                    coords="107,119,103,118,91,118,92,127,87,130,90,132,97,134,104,128,110,125" shape="poly"
+                    data="area_map_59" onmouseover="change_image('luce')" onmouseout="hide_image()">
+                <area data-image="mainvilliers" alt="Mainvilliers" title="Mainvilliers" href="#"
+                    coords="106,119,102,117,91,117,88,118,88,112,88,108,90,105,83,100,87,97,85,93,86,89,91,93,92,90,100,93,105,100,102,109,105,112,108,111,110,115"
+                    shape="poly" data="area_map_60" onmouseover="change_image('mainvilliers')"
+                    onmouseout="hide_image()">
+                <area data-image="chartres" alt="Chartres" title="Chartres" href="#"
+                    coords="122,113,118,106,116,107,114,104,108,105,106,101,103,109,105,111,108,110,111,114,111,117,108,119,111,124,111,128,117,127,118,130,121,129,123,130,127,130,129,132,133,123,141,127,142,126,146,125,142,110,139,107,137,109,136,108"
+                    shape="poly" data="area_map_61" onmouseover="change_image('chartres')" onmouseout="hide_image()">
+                <area data-image="gasvilleoiseme" alt="Gasville-Oisème" title="Gasville-Oisème" href="#"
+                    coords="147,88,146,89,147,91,145,92,142,92,142,95,137,97,137,99,134,97,140,100,137,107,143,109,149,109,152,107,161,104,162,100,156,93,156,90"
+                    shape="poly" data="area_map_62" onmouseover="change_image('gasvilleoiseme')"
+                    onmouseout="hide_image()">
+                <area data-image="leves" alt="Lèves" title="Lèves" href="#"
+                    coords="118,96,115,96,114,93,113,92,113,87,109,85,108,80,104,81,103,79,102,81,99,81,99,83,96,85,98,87,95,90,100,92,103,95,106,100,108,101,108,104,115,103,118,106"
+                    shape="poly" data="area_map_63" onmouseover="change_image('leves')" onmouseout="hide_image()">
+                <area data-image="champhol" alt="Champhol" title="Champhol" href="#"
+                    coords="128,100,126,93,118,100,118,105,122,112,137,107,138,100,135,100,132,95" shape="poly"
+                    data="area_map_64" onmouseover="change_image('champhol')" onmouseout="hide_image()">
+                <area data-image="maintenon" alt="Maintenon" title="Maintenon" href="#"
+                    coords="147,34,145,31,154,24,162,18,160,9,165,4,168,7,170,4,173,7,177,9,176,13,182,12,184,11,184,15,175,18,175,22,172,29,165,29,156,28"
+                    shape="poly" data="area_map_65" onmouseover="change_image('maintenon')" onmouseout="hide_image()">
+                <area data-image="houx" alt="Houx" title="Houx" href="#"
+                    coords="175,23,174,28,172,31,174,33,179,34,183,36,185,41,189,40,187,37,192,37,193,28,194,26,184,22,179,23"
+                    shape="poly" data="area_map_66" onmouseover="change_image('houx')" onmouseout="hide_image()">
+                <area data-image="voise" alt="Voise" title="Voise" href="#"
+                    coords="216,140,222,143,224,146,229,143,231,150,231,154,231,155,234,155,233,158,229,158,227,165,222,166,217,166,215,161,212,163,212,161,208,163,212,159,210,156,214,155,213,150,212,149,213,145"
+                    shape="poly" data="area_map_67" onmouseover="change_image('voise')" onmouseout="hide_image()">
+            </map>
+        </div>
+        <div class="description-choix">
+            <select id="choix-agglo" class="select-option" onchange="change_image(value)">
+                <option value="commune">Commune</option>
+                <option value="allonnes" data="area_map_10">Allonnes</option>
+                <option value="amilly" data="area_map_28">Amilly</option>
+                <option value="bailleauleveques" data="area_map_31">Bailleau-l'Évêques</option>
+                <option value="barjouville" data="area_map_55">Barjouville</option>
+                <option value="bercheressaintgermain" data="area_map_37">Berchères-Saint-Germain</option>
+                <option value="berchereslespierres" data="area_map_14">Berchères-les-Pierres</option>
+                <option value="boisvillelaSaintPere" data="area_map_11">Boisville-la-Saint-Père</option>
+                <option value="bonce" data="area_map_8">Boncé</option>
+                <option value="bouglainval" data="area_map_40">Bouglainval</option>
+                <option value="briconville" data="area_map_36">Briconville</option>
+                <option value="challet" data="area_map_35">Challet</option>
+                <option value="champhol" data="area_map_64">Champhol</option>
+                <option value="champseru" data="area_map_47">Champseru</option>
+                <option value="chartainvilliers" data="area_map_41">Chartainvilliers</option>
+                <option value="chartres" data="area_map_61">Chartres</option>
+                <option value="chauffours" data="area_map_22">Chauffours</option>
+                <option value="cintray" data="area_map_29">Cintray</option>
+                <option value="clevilliers" data="area_map_33">Clévilliers</option>
+                <option value="coltainville" data="area_map_51">Coltainville</option>
+                <option value="corancez" data="area_map_43">Corancez</option>
+                <option value="dammarie" data="area_map_20">Dammarie</option>
+                <option value="dangers" data="area_map_34">Dangers</option>
+                <option value="denonville" data="area_map_17">Denonville</option>
+                <option value="ermenonvillelaGrande" data="area_map_3">Ermenonville-la-grande</option>
+                <option value="fontenaysureure" data="area_map_26">Fontenay-sur-Eure</option>
+                <option value="francourville" data="area_map_13">Francourville</option>
+                <option value="fresnaylecomte" data="area_map_7">Fresnay-le-Comte</option>
+                <option value="fresnaylegilmert" data="area_map_38">Fresnay-le-Gilmert</option>
+                <option value="gasvilleoiseme" data="area_map_62">Gasville-Oisème</option>
+                <option value="gellainville" data="area_map_53">Gellainville</option>
+                <option value="houvillelabranche" data="area_map_50">Houville-la-Branche</option>
+                <option value="houx" data="area_map_66">Houx</option>
+                <option value="jouy" data="area_map_42">Jouy</option>
+                <option value="labourdinieresaintloup" data="area_map_4">La Bourdinière-Saint-Loup</option>
+                <option value="lecoudray" data="area_map_57">Le Coudray</option>
+                <option value="luce" data="area_map_59">Lucé</option>
+                <option value="luisant" data="area_map_58">Luisant</option>
+                <option value="leves" data="area_map_63">Lèves</option>
+                <option value="maintenon" data="area_map_65">Maintenon</option>
+                <option value="mainvilliers" data="area_map_60">Mainvilliers</option>
+                <option value="meslaylegrenet" data="area_map_24">Meslay-le-Grenet</option>
+                <option value="meslaylevidame" data="area_map_6">Meslay-le-Vidame</option>
+                <option value="mignieres" data="area_map_25">Mignières</option>
+                <option value="mittainvilliersverigny" data="area_map_32">Mittainvilliers-Vérigny</option>
+                <option value="moinvillelajeulin" data="area_map_15">Moinville-la-Jeulin</option>
+                <option value="morancez" data="area_map_54">Morancez</option>
+                <option value="nogentlephaye" data="area_map_52">Nogent-le-Phaye</option>
+                <option value="nogentsureure" data="area_map_23">Nogent-sur-Eure</option>
+                <option value="oinvillesousauneau" data="area_map_48">Oinville-sous-Auneau</option>
+                <option value="olle" data="area_map_21">Ollé</option>
+                <option value="poisvilliers" data="area_map_39">Poisvilliers</option>
+                <option value="prunaylegillon" data="area_map_12">Prunay-le-Gillon</option>
+                <option value="roinville" data="area_map_19">Roinville</option>
+                <option value="saintaubindesbois" data="area_map_30">Saint-Aubin-des-Bois</option>
+                <option value="saintgeorgessureure" data="area_map_27">Saint-Georges-sur-Eure</option>
+                <option value="saintlegerdesaubees" data="area_map_18">Saint-Léger-des-Aubées</option>
+                <option value="saintprest" data="area_map_56">Saint-Prest</option>
+                <option value="sandarville" data="area_map_2">Sandarville</option>
+                <option value="santeuil" data="area_map_16">Santeuil</option>
+                <option value="sours" data="area_map_46">Sours</option>
+                <option value="theuville" data="area_map_9">Theuville</option>
+                <option value="thivars" data="area_map_45">Thivars</option>
+                <option value="umpeau" data="area_map_49">Umpeau</option>
+                <option value="verleschartres" data="area_map_44">Ver-lès-Chartres</option>
+                <option value="vitrayenbeauce" data="area_map_5">Vitray-en-Beauce</option>
+                <option value="voise" data="area_map_67">Voise</option>
+
+            </select>
+            <div id="description-commune">
+                <div id="presentation">
+                    <h4>Communes</h4>
+                    <p>
+                        Le périmètre de Chartres métropole s’étend depuis le 1er janvier 2018 à 66 communes.
+
+                        Le territoire a fortement évolué ces dernières années, passant de 7 communes urbaines en
+                        2010 à
+                        47 communes urbaines, péri-urbaines et rurales en 2013 suite à différentes fusions
+                        d’intercommunalités et aux demandes d’adhésion de nouvelles communes. <br><br>
+
+                        En 2015, les communes de Vérigny et Mittainvilliers fusionnent. La métropole comptait alors
+                        46
+                        communes. 21 communes limitrophes étaient candidates pour entrer, si possible en 2017, dans
+                        Chartres métropole.
+
+                        20 nouvelles commune ont finalement intégré l'agglomération au 1er janvier 2018.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div class="item" id="area_map_55" style="display: none;">
+                    <h4>Barjouville</h4>
+                    <p>Barjouville, à la porte sud de l'agglomération, présente deux visages : un village authentique
+                        enraciné dans la Vallée de l'Eure, et une urbanisation croissante sur la rive ouest de l'Eure,
+                        avec pavillons et logements sociaux. <br>
+                        Elle abrite également un centre commercial avec environ 60 enseignes axées sur l'équipement de
+                        la maison et de la personne.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/barjouville.jpg" alt="photo-barjouville" style="width: 55%;">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4> <br>
+                        <li>Superficie : 414 hectares</li>
+                        <li>Population : 1 663 habitants</li>
+                        <li>Nom des habitants : Barjouvilloises et Barjouvillois.</li>
+                        <li>19 élus siègent au Conseil municipal</li>
+                    </ul>
+                    </p>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Barjouville, 1 rue Jean Moulin 28630 <br><br>
+                        Tel : 02 37 34 30 04 <br><br>
+                        Email : mairie@barjouville.fr <br><br>
+                        Site internet : <a href="https://barjouville.fr/fr/" target="_blank"
+                            class="lien-commune">www.barjouville.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_31" style="display: none;">
+                    <h4 class="titre">Bailleau-l'Évêques</h4>
+                    <p>
+                        Bailleau, commune à caractère rural proche de Chartres, subit une lente transformation vers le
+                        périurbain. L'agriculture y demeure significative, avec une douzaine d'exploitations. <br> <br>
+                        Le bourg et les hameaux abritent quelques commerces, artisans et entreprises de proximité. Son
+                        charme campagnard, entre Mainvilliers et les Bois de Bailleau, attire de nouveaux résidents,
+                        faisant croître sa population qui approche désormais les 1 200 habitants.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/bailleau.jpg" alt="photo-bailleau">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4>
+                        <li>Superficie : 1 968 hectares</li>
+                        <li>Population : 1 175 habitants</li>
+                        <li>Nom des habitants : Baillolaises et Baillolais</li>
+                        <li>11 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <h4>Contact :</h4>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Bailleau-l'Evêque, 6 place de l'Eglise, 28300 BAILLEAU-L'EVEQUE<br><br>
+                        Tel : 02 37 22 97 07<br><br>
+                        Email : <a href="mailto:bailleau.leveque@wanadoo.fr">bailleau.leveque@wanadoo.fr</a><br><br>
+                        Site internet : <a href="http://www.bailleau-leveque.fr" target="_blank"
+                            class="lien-commune">Site internet de Bailleau-l'Évêques</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_37" style="display: none;">
+                    <h4 class="titre">Berchères Saint-Germain</h4>
+                    <p>
+                        Berchères-Saint-Germain, fruit de la fusion en 1972 des villages de Berchères-la-Maingot et
+                        Saint-Germain-la-Gatine, est une petite commune rurale de 788 habitants. <br><br>
+                        Malgré l'arrivée de nouveaux résidents, elle préserve son caractère agricole et rural tout en
+                        abritant des vestiges du Canal Louis XIV et un monument dédié aux recherches de Louis Pasteur
+                        sur le vaccin contre la fièvre du mouton.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/berchere.JPG" alt="photo-bergere">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4>
+                        <li>Superficie : 2 767 hectares</li>
+                        <li>Population : 788 habitants</li>
+                        <li>Nom des habitants : Berchèroises et Berchèrois</li>
+                        <li>11 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <br>
+                    <h4>Contact :</h4>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Berchère-Saint-Germain, 38 Grande Rue, 28300 BERCHERES-SAINT-GERMAIN<br><br>
+                        Tel : 02 37 22 89 15<br><br>
+                        Email : <a
+                            href="mailto:bercheres-saint-germain@wanadoo.fr">bercheres-saint-germain@wanadoo.fr</a><br><br>
+                        Site internet : <a href="http://www.bercheres-saint-germain.fr" target="_blank"
+                            class="lien-commune">www.bercheres-saint-germain.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_10" style="display: none;">
+                    <h4>Allonnes</h4>
+                    <p>
+                        Allonnes, à 18 kilomètres de Chartres, doit son nom à la déesse des sources, Alona. <br>
+                        Avec une population de 320 habitants, en hausse ces trente dernières années, la commune propose
+                        des équipements variés, dont une salle polyvalente, une bibliothèque, des installations
+                        sportives, une station de recherche de semences et des artisans locaux, ainsi que des éoliennes
+                        aux alentours.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/allones.jpg" alt="photo-allones" style="width: 50%;">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4>
+                        <li>Superficie : 1025 hectares</li>
+                        <li>Population : 320 habitants</li>
+                        <li>Nom des habitants : Allonnais et Allonaise</li>
+                        <li>11 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie d'Allonnes, 5 rue de la République, 28150 ALLONNES<br><br>
+                        Tel : 02 37 99 35 25<br><br>
+                        Email : <a href="mailto:mairie@allonnes28.fr">mairie@allonnes28.fr</a><br><br>
+                        Site internet : <a href="https://www.allonnes28.fr/" target="_blank"
+                            class="lien-commune">https://www.allonnes28.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_28" style="display: none;">
+                    <h4 class="titre">Amilly</h4>
+                    <p>
+                        Amilly, un vaste plateau agricole entre la forêt de Bailleau l'Evêque et la vallée de l'Eure,
+                        s'étend sur 2 000 hectares. La commune, qui comptait historiquement 400 habitants, a connu une
+                        croissance pour atteindre près de 2 000 habitants aujourd'hui. <br><br>
+                        Elle dispose d'écoles, d'une gare sur la ligne Paris-Le Mans, de commerces de proximité, de
+                        services médicaux, et d'un calendrier festif animé grâce à ses associations communales et des
+                        infrastructures comme une salle polyvalente et une maison des associations.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/amilly.jpg" alt="photo-amilly" style="width: 50%;">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4>
+                        <li>Superficie : 2 001 hectares</li>
+                        <li>Population : 1 941 habitants</li>
+                        <li>Nom des habitants : Amilliennes et Amilliens</li>
+                        <li>3 classes de maternelle et 6 classes d'élémentaire</li>
+                        <li>19 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <br>
+                    <h4>Contact :</h4>
+                    <p class="contact-ville">
+                        Adresse : Mairie d'Amilly, 30 rue de la Mairie, 28300 AMILLY<br><br>
+                        Tel : 02 37 32 98 13<br><br>
+                        Email : <a href="mailto:mairie-amilly28@orange.fr">mairie-amilly28@orange.fr</a><br><br>
+                        Site internet : <a href="http://www.amilly28.fr" target="_blank"
+                            class="mail">www.amilly28.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_4" style="display: none;">
+                    <h4 class="titre">La Bourdinière St Loup</h4>
+                    <p>
+                        La Bourdinière Saint-Loup, située à 15 kilomètres au Sud de Chartres, comprend deux bourgs, La
+                        Bourdinière et Saint-Loup, ainsi que quatre petits hameaux. <br><br>
+                        Elle abrite divers commerces, restaurants, artisans, et entreprises de bâtiments et travaux
+                        publics. En matière d'éducation, elle fonctionne avec des regroupements pédagogiques avec
+                        d'autres communes pour les élèves en primaire et secondaire, ainsi qu'un collège privé à
+                        Mignières.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/bourdiniere.jpg" alt="photo-bourdiniere" class="img-description">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4>
+                        <li>Superficie : 2016 hectares</li>
+                        <li>Population : 569 habitants</li>
+                        <li>Nom des habitants : Bourdiniéroises et Bourdiniérois</li>
+                        <li>11 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de la Bourdinière-Saint-Loup, 3, rue de l'Eglise Saint-Loup, 28360 LA
+                        BOURDINIERE SAINT LOUP<br><br>
+                        Tel : 02 37 26 66 26<br><br>
+                        Email : <a href="mailto:mairie@labourdinierestloup.fr">mairie@labourdinierestloup.fr</a><br>
+                        Site internet : <a href="https://labourdinierestloup.fr" target="_blank"
+                            class="lien-commune">www.labourdinierestloup.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_2" style="display: none;">
+                    <h4>Sandarville</h4>
+                    <br>
+                    <p>
+                        Sandarville est un village reconnu pour son auberge réputée, accueillant également quelques
+                        artisans et assistantes maternelles. Depuis un remembrement agricole en 2000, des bois et des
+                        haies ont été ajoutés pour les promeneurs et la biodiversité. <br><br>
+                        Bien que Sandarville ait accueilli deux classes de CP jusqu'en 2010, elles ont été transférées à
+                        Bailleau-le-Pin dans le cadre d'un regroupement pédagogique. La commune propose également une
+                        salle polyvalente pour les activités associatives, ainsi qu'un city-stade pour les jeunes.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/sandarville.jpg" alt="photo-sandarville" style="width: 50%">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4>
+                        <li>Superficie : 951 hectares</li>
+                        <li>Population : 418 habitants</li>
+                        <li>Nom des habitants : Sandarvilloises et Sandarvillois</li>
+                        <li>11 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Sandarville, 15 rue de l'Arche, 28120 SANDARVILLE <br><br>
+                        Tel : 02 37 25 38 64 <br><br>
+                        Email : <a href="mailto:sandarville.mairie@orange.fr">sandarville.mairie@orange.fr</a> <br><br>
+                        Site internet : <a href="http://www.sandarville.fr" target="_blank"
+                            class="lien-commune">www.sandarville.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_64" style="display: none;">
+                    <h4>Champhol</h4>
+                    <p>
+                        Champhol, une commune d'Eure-et-Loir s'étendant sur 537 hectares, se trouve à seulement 3 km de
+                        Chartres, en bordure des communes de Chartres, Lèves, Saint-Prest, et Gasville-Oisème. <br><br>
+                        Sous l'Ancien Régime, la paroisse de Saint-Denis de Champhol englobait le bourg de Saint-Denis
+                        et ses
+                        hameaux de Sèchecôte, Vauventriers, et Fontaine Bouillant. Parmi les éléments notables de son
+                        patrimoine se trouvent l'église Saint-Denis de Champhol, le lavoir de Fontaine Bouillant, et le
+                        château de Vauventriers.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/champhol.jpg" alt="photo-champhol" class="img-description" style="width: 50%;">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4> <br>
+                        <li>Superficie : 537 hectares</li>
+                        <li>Population : 3 521 habitants</li>
+                        <li>Nom des habitants : Champholoises et Champholois</li>
+                        <li>23 élus siègent au Conseil municipal</li>
+                    </ul>
+                    </p>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Champhol, 15 rue de la Mairie 28300 <br><br>
+                        Tel : 02 37 21 61 65 <br><br>
+                        Email : mairie.champhol@wanadoo.fr <br><br>
+                        Site internet : <a href="http://www.ville-champhol.fr/" target="_blank"
+                            class="lien-commune">www.ville-champhol.frr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_47" style="display: none;">
+                    <h4>Champseru</h4>
+                    <p>
+                        Champseru, une commune située dans l'Eure-et-Loir en région Centre-Val de Loire, séduit par son
+                        calme et sa proximité avec Chartres, célèbre pour sa cathédrale gothique, à seulement 10 minutes
+                        en voiture au nord-ouest. <br><br>
+                        Ses rues tranquilles bordées d'arbres et ses maisons en pierre incarnent le charme des villages
+                        ruraux français. Les Champserusiens s'attachent à préserver leur patrimoine et leur
+                        environnement naturel, notamment le ruisseau le Pont, qui traverse le village, offrant un lieu
+                        de détente paisible le long de ses rives.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/champseru.jpg" alt="photo-champseru" style="width: 40%;">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4> <br>
+                        <li>Superficie : 1499 hectares</li>
+                        <li>Population : 313 habitants</li>
+                        <li>Nom des habitants : Camposérusiens et Camposérusiennes</li>
+                        <li>11 élus au conseil municipal</li>
+                    </ul>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Champseru, 14 rue de la Mairie 28700 <br><br>
+                        Tel : 02 37 31 12 07 <br><br>
+                        Email : communedechampseru28@gmail.com <br><br>
+                        Site internet : <a href="http://www.mairie-de-champseru.fr/" target="_blank"
+                            class="lien-commune">mairie-de-champseru.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_61" style="display: none;">
+                    <h4>Chartres</h4>
+                    <p>
+                        Chartres est le cœur de l'agglomération, concentrant plus des deux tiers de l'activité
+                        économique, tout en étant étroitement liée à son bassin de vie. C'est pourquoi la création d'une
+                        grande agglomération a été choisie, englobant les communes urbaines, périurbaines et rurales,
+                        pour un total de 124 000 habitants. <br><br>
+                        Cette réalité s'inscrit dans l'histoire, où la cathédrale est un repère symbolique, tout comme
+                        les lieux culturels tels que L'Odyssée, le cinéma et la Médiathèque. Chartres joue un rôle
+                        central tout en respectant l'identité des autres communes grâce à un développement solidaire.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/chartres.jpg" alt="photo-chartres" style="width: 40%;">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4> <br>
+                        <li>Superficie : 1 685 hectares</li>
+                        <li>Population : 39 767 habitants</li>
+                        <li>Nom des habitants : Chartraines et Chartrains</li>
+                        <li>43 élus siègent au Conseil municipal</li>
+                    </ul>
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Chartres, Hôtel de Ville Place des Halles 28019 CHARTRES CEDEX <br><br>
+                        Tel : 02 37 23 40 00 <br><br>
+                        Email : contact@ville-chartres.fr <br><br>
+                        Site internet : <a href="https://www.chartres.fr/" target="_blank"
+                            class="lien-commune">www.chartres.fr</a>
+                    </p>
+                </div>
+                <div class="item" id="area_map_51" style="display: none;">
+                    <h4>Coltainville</h4>
+                    <p>
+                        Coltainville, à quelques kilomètres de Chartres sur le plateau Nord-Est, est une commune rurale
+                        traversée par la route menant à Gallardon, historiquement le seul lien entre Chartres et Paris.
+                        <br><br>
+                        Elle compte environ 900 habitants répartis entre le bourg et le hameau de Senainville. Malgré
+                        l'arrivée de nouveaux habitants travaillant en région parisienne, Coltainville conserve sa
+                        vocation agricole et propose diverses activités associatives, dont un vide-grenier réputé en
+                        septembre.
+                    </p>
+                    <div class="img-description">
+                        <img src="img/coltainville.png" alt="photo-coltainville">
+                    </div>
+                    <ul class="liste-clef">
+                        <h4>Chiffre-clef</h4> <br>
+                        <li>Superficie : 1 802 hectares</li>
+                        <li>Population : 889 habitants</li>
+                        <li>Nom des habitants : Coltainvilloises et Coltainvillois</li>
+                        <li>15 élus siègent au Conseil municipal</li>
+                    </ul>
+
+                    <br>
+                    <p class="contact-ville">
+                        Adresse : Mairie de Coltainville, 5 rue Romain Fouré 28300 <br><br>
+                        Tel : 02 37 31 60 66 <br><br>
+                        Email : mairie.coltainville(at)wanadoo.fr <br><br>
+                        Site internet : <a href="http://www.coltainville.fr/" target="_blank"
+                            class="lien-commune">www.coltainville.fr</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
