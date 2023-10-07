@@ -131,6 +131,7 @@ footer {
 
 .container-footer {
     align-items: center;
+    justify-content: start; /* Espace entre les deux containers */
 }
 
 .container-adresse {
@@ -223,7 +224,7 @@ footer {
 
 .container-liens {
     position: relative;
-    left: 5%;
+    left: 15%;
 }
 
 .liste-liens li {
