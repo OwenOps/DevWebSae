@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     init();
     newsLetter();
     counter();
-    typewriter();
+    typewriter(txt,title);
 });
 var title;
 var txt;
@@ -27,6 +27,10 @@ function counter() {
     });
 }
 
+setTimeout(() => {
+    typewriter(txt, 0)
+}, 500);
+
 function typewriter(word, index){
     if(index < word.length) {
         setTimeout(() => {
@@ -35,7 +39,3 @@ function typewriter(word, index){
         }, 100);
     }
 }
-
-setTimeout(() => {
-    typewriter(txt, 0)
-}, 500);
