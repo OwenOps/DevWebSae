@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="js/accueil.js"></script>
     <title>Chartres</title>
 </head>
@@ -18,22 +23,24 @@
                 Chiffres-clés
             </h4>
         </div>
-        <div id="container-liste">
-            <ul id="liste-chiffre">
-                <li>
-                    65 216
-                    <p>Actifs</p>
-                </li>
-                <li>
-                    140 347
-                    <p>Habitants</p>
-                </li>
-                <li>
-                    66
-                    <p>Communes</p>
-                </li>
-            </ul>
-        </div>
+        <section class="counter-section">
+            <div id="container-liste">
+                <ul id="liste-chiffre">
+                    <li>
+                        <span class="num">65.216</span>
+                        <p>Actifs</p>
+                    </li>
+                    <li>
+                        <span class="num">140.347</span>
+                        <p>Habitants</p>
+                    </li>
+                    <li>
+                        <span class="num">66</span>
+                        <p>Communes</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
     <!----------------------------------------------------Fin chiffres clefs---------------------------------------------------->
 
@@ -98,6 +105,7 @@
             </div>
         </div>
     </footer>
+    
 </body>
 
 </html>

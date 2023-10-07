@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     newsLetter();
+    counter();
 });
 
 function newsLetter() {
@@ -8,5 +9,11 @@ function newsLetter() {
 
     btn.addEventListener("click", () => {
         mail.value = "";
+    });
+}
+
+function counter() {
+    $('.num').counterUp({
+        time: 2000,
     });
 }

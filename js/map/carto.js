@@ -10,10 +10,10 @@ function hide_image() {
     return true;
 }
 
-//Pour avoir les bonnes coordonnees (fonctionne pas)
-$(document).ready(function (e) {
+// //Pour avoir les bonnes coordonnees (fonctionne pas)
+/* $(document).ready(function (e) {
     $('img[usemap]').rwdImageMaps();
-});
+}); */
 
 //Quand on clique, sa change la description
 $(document).ready(function () {
