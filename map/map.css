@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+.mapping {
+    background-image: url(../../img/map/map.png);
+    background-size: 100%;
+    height: 600px;
+    max-width: 639px;
+    background-repeat: no-repeat;
+    margin-top: 13px;
+    z-index: 99;
+
+}
+
+#image_map {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+area {
+    outline: none;
+}
+
+/********************Debut Communes********************/
+.titre-commune {
+    margin: 50px 0 130px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: Comfortaa;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.titre-commune::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.308);
+    top: 20px;
+}
+
+.nos-communes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.description-choix {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#choix-agglo {
+    position: relative;
+    bottom: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    width: 32%;
+    background: #538E52;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#choix-agglo option {
+    background-color: white;
+    color: #323488;
+}
+
+#description-commune {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 30px;
+    background: #F0EDED;
+    max-height: 420px;
+    overflow: auto;
+    width: 70%;
+}
+
+#description-commune h4 {
+    text-align: center;
+    margin: 20px 0px;
+    color: #323488;
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#description-commune p,
+.liste-clef {
+    display: flex;
+    margin: 0 28px;
+    color: #474040;
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    list-style: none;
+    text-align: justify;
+}
+
+.img-description {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.liste-clef,
+.contact-ville {
+    flex-direction: column;
+}
+
+.contact-ville {
+    text-align: center;
+}
+
+.lien-commune {
+    cursor: pointer;
+    margin-bottom: 12px;
+    color: #205792 !important;
+    text-decoration: underline !important;
+}
+
+@media screen and (max-width: 1340px) {
+    #choix-agglo {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nos-communes {
+        flex-direction: column;
+    }
+
+    .description-choix {
+        position: relative;
+        top: 100px;
+        width: 80%;
+    }
+
+    #choix-agglo {
+        width: 40%;
+        font-size: 20px;
+    }
+
+    #description-commune {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .mapping {
+        height: 450px;
+    }
+
+    #choix-agglo {
+        font-size: 15px;
+        width: 65%;
+    }
+
+    #choix-agglo option {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mapping {
+        height: 350px;
+    }
+}
+
+/********************Fin Communes********************/
