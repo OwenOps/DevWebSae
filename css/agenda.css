@@ -1,0 +1,234 @@
+html {
+    background-color: #d9d9d9;
+    font-family: 'Segoe UI', serif;
+}
+
+
+/* -------------------------------------------- PROPRIETES ACTUS/AGENDA ---------------------------------------------- */
+
+#titre_magazine, #titre_actualites {
+    color: black;
+    text-align: center;
+    width: 40%;
+    float: left;
+    height: 2em;
+    font-size: 1.25em;
+}
+
+#agenda, #actualites {
+    margin: 5% 10% 5% 10%;
+    border-radius: 20px;
+}
+
+#agenda {
+    height: 400px;
+}
+
+#actualites {
+    height: 600px;
+}
+
+
+/* ---------------------------------------------- TITRES AGENDA/ACTUS ------------------------------------------------ */
+
+
+#titre_magazine {
+    margin-left: 10%;
+    width: 37.5%;
+}
+
+#titre_actualites {
+    margin-right: 10%;
+    margin-left: 2.5%;
+}
+
+#titre_agenda {
+    text-align: center;
+    padding: 5% 10% 0 10%;
+}
+
+/* ---------------------------------------------- IMAGES AGENDA/ACTUS ------------------------------------------------ */
+
+
+.image_agenda, .image_actu {
+    border-radius: inherit;
+    height: 50%;
+}
+
+.image_agenda {
+    width: 100%;
+}
+
+.image_actu {
+    width: 96%;
+    padding: 2%;
+}
+
+.image_agenda p, .image_actu p {
+    border-radius: inherit;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    width: fit-content;
+    position: relative;
+
+    left: 2%;
+}
+
+.image_agenda p {
+    background-color:  #f0eded;
+    border: solid black 0.05em;
+    bottom: 2.5em;
+    color: #000000;
+}
+
+.image_actu p {
+    background-color: #538e52;
+    border: solid white 0.05em;
+    bottom: 3.5em;
+    color: #ffffff;
+}
+
+.image_agenda img, .image_actu img  {
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------------- TEXTE ACTUS/AGENDA ------------------------------------------------ */
+
+
+#actualites .texte_actus h1, #actualites .texte_actus p {
+    overflow: hidden;
+    margin: 0 2% 2% 2%;
+}
+
+#actualites .texte_actus h1 {
+    font-size: 150%;
+    color: #538e52;
+}
+
+#actualites .texte_actus p {
+    font-size: 100%;
+    color: #585858;
+}
+
+
+#agenda .texte_agenda h1, #agenda .texte_agenda h2 {
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    max-height: 4vh;
+    font-size: 150%;
+}
+
+#agenda .texte_agenda h1 {
+    color: #585858;
+    font-weight: bold;
+}
+
+#agenda .texte_agenda h2 {
+    color: #585858;
+    font-weight: lighter;
+}
+
+.texte_agenda, .texte_actus {
+    height: 50%
+}
+
+
+/* ----------------------------------------------- BLOCS D'ACTUALITES ------------------------------------------------ */
+
+
+#agenda > *, #actualites > * {
+    border-radius: inherit;
+    background-color: #ffffff;
+    float: left;
+}
+
+#agenda > *:hover, #actualites > *:hover {
+    background-color: #efefef;
+}
+
+#grand_journal {
+    background-color: transparent;
+    margin-right: 3%;
+    height: 100%;
+    min-width: 47%;
+}
+
+#image_journal {
+    object-fit: scale-down;
+    width: 96%;
+    height: 96%;
+    padding: 2%;
+}
+
+#moyenne_actualite {
+    margin: 0 0 1% 1%;
+    width: 48%;
+    height: 47%;
+}
+
+#petite_actualite_1 {
+    margin: 1% 1% 0 1%;
+    width: 23%;
+    height: 48%;
+}
+
+#petite_actualite_2 {
+    margin: 1% 0 1% 1%;
+    width: 23%;
+    height: 37%;
+}
+
+
+/* ------------------------------------------------ BLOCS DE L'AGENDA ------------------------------------------------ */
+
+
+#grand_agenda {
+    border-radius: inherit;
+    margin-right: 1%;
+    height: 100%;
+    width: 49%;
+}
+
+#moyen_agenda_1 {
+    border-radius: inherit;
+    margin: 0 1% 0 1%;
+    width: 23%;
+    height: 100%;
+}
+
+#moyen_agenda_2 {
+    border-radius: inherit;
+    margin: 0 0 0 1%;
+    width: 23%;
+    height: 89%;
+}
+
+
+/* ------------------------------------------- BOUTON PLUS D'ACTUS / AGENDA ------------------------------------------ */
+
+
+button { all: unset }
+
+#plus_actus, #plus_agenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+    background-color: #538e52;
+
+    margin: 1% 0 0 1%;
+    width: 23%;
+    height: 6%;
+}
+
+#plus_actus:hover, #plus_agenda:hover {
+    outline: revert;
+    background-color: #53ae52;
+}
+
+/* -------------------------------------------------- FIN ACTUS/AGENDA ----------------------------------------------- */
