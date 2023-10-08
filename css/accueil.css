@@ -68,8 +68,11 @@ header {
     margin-right: 12px;
 }
 
-/* -------- DEBUT DE LA BARRE DE RECHERCHE ----------- */
+.hamburger span {
+    min-width: 35px;
+ }
 
+/* -------- DEBUT DE LA BARRE DE RECHERCHE ----------- */
 .search {
     display : flex;
     align-items: center;
@@ -99,11 +102,6 @@ header {
     .v-line,
     header h1 {
         display: none;
-    }
-
-    #hamburger {
-        width: 95%;
-        margin-bottom: 30px;
     }
 
     .search {
@@ -140,10 +138,6 @@ header {
         margin-bottom: 30px;
     }
 
-    #hamburger {
-        width: 80%;
-    }
-
     .search {
         width: 250px;
         left: 18%;
@@ -152,8 +146,12 @@ header {
     .search input {
         width: 600px;
     }
-}
 
+    .hamburger {
+        position: relative;
+        bottom: 15px;
+    }
+}
 /* -------- FIN DE LA BARRE DE RECHERCHE ----------- */
 
 /* -------- DEBUT DES LOGO ANIMES ----------- */
@@ -247,6 +245,7 @@ header {
 .l1 {
     transform: translateY(-12px)
 }
+
 .l3 {
     transform: translateY(12px)
 }
@@ -255,16 +254,16 @@ header {
     transform: translateY(0px) rotate(135deg);
     background-color: rgb(152, 35, 35);
 }
+
 .conteneur-toggler.active .l2 {
     opacity: 0;
 }
+
 .conteneur-toggler.active .l3 {
     transform: translateY(0px) rotate(-135deg);
     background-color: rgb(152, 35, 35);
 }
-
 /* ------------------------------------------------ FIN ANIMATION MENU HAMBURGER ------------------------------------------------ */
-
 /* ------------------------------------------------ FIN DE LA NAVBAR ------------------------------------------------ */
 
 /* --------------------------------------- DEBUT DE LA BARRE D'ACCES RAPIDE ----------------------------------------- */
@@ -305,7 +304,6 @@ header {
 .acces ul p a:hover {
     color: green;
 }
-
 /*----------Pour aligner verticalement les images-----*/
 .acces ul:first-of-type img,
 .acces ul:last-of-type img {
@@ -319,7 +317,6 @@ header {
 .acces ul:last-of-type p {
     margin-bottom: 35px;
 }
-
 
 @media screen and (max-width: 1420px) {
     .acces {
@@ -392,8 +389,6 @@ header h1 {
         width: 40%;
     }
 }
-
-
 /* ----------------------------------------- FIN TEXTE ANIME ----------------------------------------- */
 
 /* ----------------------------------------- DEBUT BOUTON REMONTER ----------------------------------------- */
@@ -432,8 +427,6 @@ header h1 {
 #actualites {
     height: 600px;
 }
-
-
 /* ---------------------------------------------- TITRES AGENDA/ACTUS ------------------------------------------------ */
 #titre_magazine {
     margin-left: 10%;
@@ -449,7 +442,6 @@ header h1 {
     text-align: center;
     padding: 5% 10% 0 10%;
 }
-
 /* ---------------------------------------------- IMAGES AGENDA/ACTUS ------------------------------------------------ */
 .image_agenda, .image_actu {
     border-radius: inherit;
@@ -672,7 +664,6 @@ button { all: unset }
         font-size: 50px;
     }
 }
-
 /*-----------------------------------------Fin Chiffre cles-----------------------------------------*/
 
 /*-----------------------------------------Debut Communes-----------------------------------------*/
@@ -695,12 +686,12 @@ button { all: unset }
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 @media screen and (max-width: 1000px) {
     iframe {
-        height: 180%;
+        height: 150%;
     }
 
     .titre-commune {
@@ -798,7 +789,7 @@ footer {
 }
 
 .newsletter button {
-    width: 7%;
+    width: 5%;
     border-radius: 10px;
     background-color: #538E52;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -808,6 +799,11 @@ footer {
     border: none;
     position: relative;
     cursor: pointer;
+}
+
+.newsletter img {
+    position: relative;
+    left: 20px;
 }
 
 .newsletter button:active {
@@ -859,6 +855,10 @@ footer {
 
     .newsletter p {
         font-size: 18px;
+    }
+
+    .newsletter img {
+        left: 15px;
     }
 
     .liste-liens li {
@@ -937,6 +937,10 @@ footer {
         left: 120px;
         bottom: 48px;
         width: 9%;
+    }
+
+    .newsletter img {
+        left: 22px;
     }
 
     .newsletter p,

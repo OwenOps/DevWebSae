@@ -1,10 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     init();
-    newsLetter();
-    counter();
-    typewriter(txt,title);
-    toggleNav();
-    remonter();
 });
 
 var title;
@@ -13,6 +8,12 @@ var txt;
 function init() {
     title = document.querySelector('h1');
     txt = "Bienvenue à Chartres Métropole !";
+
+    newsLetter();
+    counter();
+    typewriter(txt, title);
+    toggleNav();
+    remonter();
 }
 
 function newsLetter() {
@@ -34,8 +35,8 @@ setTimeout(() => {
     typewriter(txt, 0)
 }, 500);
 
-function typewriter(word, index){
-    if(index < word.length) {
+function typewriter(word, index) {
+    if (index < word.length) {
         setTimeout(() => {
             title.innerHTML += `<span>${word[index]}</span>`
             typewriter(txt, index + 1)
@@ -43,15 +44,14 @@ function typewriter(word, index){
     }
 }
 
-function toggleNav(){
-
+function toggleNav() {
     const hamburgerButton = document.querySelector(".conteneur-toggler")
     const navigation = document.querySelector(".conteneur")
 
     hamburgerButton.addEventListener("click", () => {
 
-    hamburgerButton.classList.toggle("active")
-    navigation.classList.toggle("active")
+        hamburgerButton.classList.toggle("active")
+        navigation.classList.toggle("active")
     });
 }
 
@@ -59,19 +59,19 @@ function remonter() {
     const btn = document.querySelector('#remonter');
 
     btn.addEventListener('click', () => {
-    
+
         window.scrollTo({
             top: 0,
             left: 0,
             behavior: "smooth"
         })
-    
+
     })
 }
 
-window.addEventListener("scroll", function(){
-	var navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", function () {
+    var navbar = document.querySelector(".navbar");
     var hamburger = document.querySelector(".conteneur-toggler");
-	navbar.classList.toggle("sticky", window.scrollY > 10);
+    navbar.classList.toggle("sticky", window.scrollY > 10);
     hamburger.classList.toggle("sticky", window.scrollY > 10);
 })
