@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     newsLetter();
     counter();
     typewriter(txt,title);
+    toggleNav();
+    remonter();
 });
+
 var title;
 var txt;
 
@@ -39,3 +42,36 @@ function typewriter(word, index){
         }, 100);
     }
 }
+
+function toggleNav(){
+
+    const hamburgerButton = document.querySelector(".conteneur-toggler")
+    const navigation = document.querySelector(".conteneur")
+
+    hamburgerButton.addEventListener("click", () => {
+
+    hamburgerButton.classList.toggle("active")
+    navigation.classList.toggle("active")
+    });
+}
+
+function remonter() {
+    const btn = document.querySelector('#remonter');
+
+    btn.addEventListener('click', () => {
+    
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        })
+    
+    })
+}
+
+window.addEventListener("scroll", function(){
+	var navbar = document.querySelector(".navbar");
+    var hamburger = document.querySelector(".conteneur-toggler");
+	navbar.classList.toggle("sticky", window.scrollY > 10);
+    hamburger.classList.toggle("sticky", window.scrollY > 10);
+})

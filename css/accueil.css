@@ -39,6 +39,13 @@ header {
     align-items: center;
 }
 
+.navbar.sticky {
+    background: rgba(30, 57, 112, 0.959);
+    position: fixed;
+    z-index: 10;
+    transition: 1s;
+}
+
 .navbar .nav-links {
     display: flex;
 }
@@ -54,10 +61,6 @@ header {
     margin: 0 12px;
 }
 
-#hamburger {
-    width: 80%;
-}
-
 .v-line {
     border-left: 3px solid white;
     height: 80%;
@@ -66,6 +69,7 @@ header {
 }
 
 /* -------- DEBUT DE LA BARRE DE RECHERCHE ----------- */
+
 .search {
     display : flex;
     align-items: center;
@@ -85,9 +89,9 @@ header {
 }
 
 .search i { /* Ciblage de la loupe */
-    position: relative;
-    right: 40px;
-    bottom: 5px;
+    position: absolute;
+    margin: 240px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 980px) {
@@ -187,6 +191,80 @@ header {
 }
 
 /* -------- FIN DES LOGO ANIMES ----------- */
+
+/* ---------------------------------------------- DEBUT ANIMATION MENU HAMBURGER ------------------------------------------------ */
+
+.conteneur {
+    position: fixed;
+    z-index: 10;
+    width: 25%;
+    height: 87.7%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(30, 57, 112, 0.959);
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+
+.conteneur.active { 
+    transform: translate(0);
+}
+
+.conteneur a {
+    color: #ffffffed;
+    font-size: 20px;
+    display: block;
+    margin: 35px 0;
+    text-decoration: none;
+}
+
+.conteneur-toggler {
+    z-index: 15;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.line {
+    position: absolute;
+    z-index: 15;
+    display: block;
+    width: 2.3%;
+    height: 2.5px;
+    background: #ffffff;
+    transition: transform 0.3s ease-out;
+    opacity: 0.1s ease-out;
+}
+
+.l1 {
+    transform: translateY(-12px)
+}
+.l3 {
+    transform: translateY(12px)
+}
+
+.conteneur-toggler.active .l1 {
+    transform: translateY(0px) rotate(135deg);
+    background-color: rgb(152, 35, 35);
+}
+.conteneur-toggler.active .l2 {
+    opacity: 0;
+}
+.conteneur-toggler.active .l3 {
+    transform: translateY(0px) rotate(-135deg);
+    background-color: rgb(152, 35, 35);
+}
+
+/* ------------------------------------------------ FIN ANIMATION MENU HAMBURGER ------------------------------------------------ */
+
 /* ------------------------------------------------ FIN DE LA NAVBAR ------------------------------------------------ */
 
 /* --------------------------------------- DEBUT DE LA BARRE D'ACCES RAPIDE ----------------------------------------- */
@@ -204,6 +282,30 @@ header {
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.955);
 }
 
+.acces ul {
+    text-align: center;
+    margin: 0px 21px;
+    padding-top: 20px;
+
+}
+
+.acces ul img {
+    margin-bottom: 13px;
+}
+
+.acces ul img:hover {
+    transform: scale(1.13);
+}
+
+.acces ul p a {
+    transition: color 1s;
+    color: #3858bbed;
+}
+
+.acces ul p a:hover {
+    color: green;
+}
+
 /*----------Pour aligner verticalement les images-----*/
 .acces ul:first-of-type img,
 .acces ul:last-of-type img {
@@ -218,26 +320,6 @@ header {
     margin-bottom: 35px;
 }
 
-.acces ul {
-    text-align: center;
-    margin: 25px 25px 0;
-}
-
-.acces ul img {
-    margin-bottom: 13px;
-}
-
-.acces ul img:hover {
-    transform: scale(1.13);
-}
-
-.acces ul p a {
-    color: #3858bbed;
-}
-
-.acces ul p a:hover {
-    color: green;
-}
 
 @media screen and (max-width: 1420px) {
     .acces {
@@ -311,12 +393,22 @@ header h1 {
     }
 }
 
-/* #conteneur {
-    width: 50%;
-    height: 100;
-} */
 
 /* ----------------------------------------- FIN TEXTE ANIME ----------------------------------------- */
+
+/* ----------------------------------------- DEBUT BOUTON REMONTER ----------------------------------------- */
+
+#remonter {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+/* ----------------------------------------- FIN BOUTON REMONTER ----------------------------------------- */
+
 /* -------------------------------------------- PROPRIETES ACTUS/AGENDA ---------------------------------------------- */
 
 #titre_magazine, #titre_actualites {
