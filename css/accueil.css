@@ -26,6 +26,7 @@ header {
     background-image: url(../img/cathedrale.jpg);
     background-size: cover;
 }
+
 /* ------------------------------------------------ FIN IMAGE DE BACKGROUND ------------------------------------------------ */
 
 /* ------------------------------------------------ DEBUT DE LA NAVBAR ------------------------------------------------ */
@@ -36,7 +37,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* box-sizing: border-box; */
 }
 
 .navbar .nav-links {
@@ -54,6 +54,10 @@ header {
     margin: 0 12px;
 }
 
+#hamburger {
+    width: 80%;
+}
+
 .v-line {
     border-left: 3px solid white;
     height: 80%;
@@ -63,33 +67,97 @@ header {
 
 /* -------- DEBUT DE LA BARRE DE RECHERCHE ----------- */
 .search {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
+    width: 220px;
+    position: relative;
 }
 
-.search input {
-    /* Ciblage de la barre de recherche */
-    width: 280px;
-    padding: 12px;
-    margin-bottom: 10px;
-    border-radius: 13px;
-    border-style: none;
-    background-color: white;
-    font-size: 16px;
-    letter-spacing: .8px;
-}
-
-.search i {
-    /* Ciblage de la loupe */
+.icon {
     position: absolute;
-    margin: 240px;
-    padding-bottom: 10px;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
 }
 
-.navbar .nav-links .hamburger {
-    background-color: blue;
-    width: 40%;
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px black;
+}
+
+.input-container:hover>.icon {
+    animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+    0%,
+    100% {
+        transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+
+    50% {
+        transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .nav-links ul li:not(:last-child):not(:first-child),
+    .v-line,
+    header h1 {
+        display: none;
+    }
+
+    #hamburger {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .search {
+        position: absolute;
+        top: 360px;
+        width: 30%;
+        left: 35%;
+    }
+}
+
+@media (max-width: 630px) {
+    .search {
+        top: 210px;
+        width: 40%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 451px) {
+    #logo-chartres {
+        margin-top: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar a {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    #hamburger {
+        width: 80%;
+    }
+
+    .search {
+        width: 50%;
+        left: 20%;
+    }
 }
 
 /* -------- FIN DE LA BARRE DE RECHERCHE ----------- */
@@ -127,6 +195,7 @@ header {
 #btn_flux:hover {
     background-image: url("../img/rss.png");
 }
+
 /* -------- FIN DES LOGO ANIMES ----------- */
 /* ------------------------------------------------ FIN DE LA NAVBAR ------------------------------------------------ */
 
@@ -144,6 +213,7 @@ header {
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.955);
 }
+
 /*----------Pour aligner verticalement les images-----*/
 .acces ul:first-of-type img,
 .acces ul:last-of-type img {
@@ -201,24 +271,24 @@ header {
     .acces {
         width: 80%;
         left: 10%;
-        flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 657px) {
+@media screen and (max-width: 630px) {
     .acces {
-        height: 310px;
-        top: 65%;
+        flex-wrap: wrap;
+        height: 320px;
+        top: 50%;
     }
 
     .acces ul {
         padding: 0 15px;
     }
 }
+
 /* ----------------------------------------- FIN DE LA BARRE D'ACCES RAPIDE ----------------------------------------- */
 
 /* ----------------------------------------- DEBUT TEXTE ANIME ----------------------------------------- */
-
 header h1 {
     position: absolute;
     top: 35%;
@@ -636,4 +706,5 @@ footer {
         width: 80%;
     }
 }
+
 /*-----------------------------------------Fin Footer-----------------------------------------*/
