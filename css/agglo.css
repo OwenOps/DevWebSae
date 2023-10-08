@@ -36,6 +36,13 @@ header {
     background-color: #222D53;
 }
 
+.navbar.sticky {
+    background: rgba(30, 57, 112, 0.959);
+    position: fixed;
+    z-index: 10;
+    transition: 1s;
+}
+
 .navbar .nav-links {
     display: flex;
 }
@@ -51,12 +58,6 @@ header {
     margin: 0 12px;
 }
 
-#hamburger {
-    width: 80%;
-    position: relative;
-    bottom: 5px;
-}
-
 .v-line {
     border-left: 3px solid white;
     height: 80%;
@@ -64,8 +65,18 @@ header {
     margin-right: 12px;
 }
 
-@media (max-width: 611px) {
-    .reseaux,
+.hamburger {
+    position: relative;
+    bottom: 5px;
+}
+
+.hamburger span {
+   min-width: 35px;
+}
+/* -------- DEBUT DE LA BARRE DE RECHERCHE ----------- */
+
+@media screen and (max-width: 980px) {
+    .nav-links ul li:not(:last-child),
     .v-line {
         display: none;
     }
@@ -82,11 +93,9 @@ header {
         width: 50%;
         margin-bottom: 30px;
     }
-
-    #hamburger {
-        width: 80%;
-    }
 }
+
+/* -------- FIN DE LA BARRE DE RECHERCHE ----------- */
 
 /* -------- DEBUT DES LOGO ANIMES ----------- */
 #btn_linkedin {
@@ -121,8 +130,80 @@ header {
 #btn_flux:hover {
     background-image: url("../img/rss.png");
 }
-
 /* -------- FIN DES LOGO ANIMES ----------- */
+
+/* ---------------------------------------------- DEBUT ANIMATION MENU HAMBURGER ------------------------------------------------ */
+.conteneur {
+    position: fixed;
+    z-index: 10;
+    width: 25%;
+    height: 87.7%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(30, 57, 112, 0.959);
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+
+.conteneur.active { 
+    transform: translate(0);
+}
+
+.conteneur a {
+    color: #ffffffed;
+    font-size: 20px;
+    display: block;
+    margin: 35px 0;
+    text-decoration: none;
+}
+
+.conteneur-toggler {
+    z-index: 15;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.line {
+    position: absolute;
+    z-index: 15;
+    display: block;
+    width: 2.3%;
+    height: 2.5px;
+    background: #ffffff;
+    transition: transform 0.3s ease-out;
+    opacity: 0.1s ease-out;
+}
+
+.l1 {
+    transform: translateY(-12px)
+}
+.l3 {
+    transform: translateY(12px)
+}
+
+.conteneur-toggler.active .l1 {
+    transform: translateY(0px) rotate(135deg);
+    background-color: rgb(152, 35, 35);
+}
+.conteneur-toggler.active .l2 {
+    opacity: 0;
+}
+.conteneur-toggler.active .l3 {
+    transform: translateY(0px) rotate(-135deg);
+    background-color: rgb(152, 35, 35);
+}
+/* ------------------------------------------------ FIN ANIMATION MENU HAMBURGER ------------------------------------------------ */
+
+/* ------------------------------------------------ FIN DE LA NAVBAR ------------------------------------------------ */
 /*--------------------Debut Agglo presentation--------------------*/
 .titre {
     display: flex;
