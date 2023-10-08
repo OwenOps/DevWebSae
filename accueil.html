@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
+
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css_bs/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/accueil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -11,79 +13,177 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="js/accueil.js"></script>
     <title>Chartres</title>
-	</head>
+</head>
 
-	<body>
-		<!--------------------------------------------------DEBUT DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
-		<header>
-			<nav class="navbar">
-				
-				<a href="accueil.html"><img src="img/logo_chartres.png" height="85px" width="265px" alt="Logo de Chartres"></a>
-				
-				<div class="nav-links">
-					<ul>
-						<li>
-							<div class="search">
-							<i><img src="img/loupe.png" height="25px" width="25px" alt="Loupe"></i>
-							<input type = "search" placeholder = "Que recherchez-vous... ?">
-							</div>
-						</li>
-							<div class="v-line"></div>
-						<li>
-							<a href="https://www.facebook.com/ChartresMetropoleOfficiel/" target="_blank" id="btn_facebook"></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/company/chartres-metropole/" target="_blank" id="btn_linkedin"></a>
-						</li>
-						<li>
-							<a href="https://www.chartres-metropole.fr/contacts/menu-haut-transversal/flux-rss" target="_blank" id="btn_flux"></a>
-						</li>
-							<div class="v-line"></div>
-						<li>
-							<a class="hamburger"><img src="img/hamburger.png" height="36px" width="36px" alt="Menu hamburger"></a>
-						</li>
-					</ul>
-				</div>
+<body>
+    <!--------------------------------------------------DEBUT DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
+    <header>
+        <h1 aria-label="Chartres"></h1>
+        <nav class="navbar">
+            <a href="accueil.html"><img src="img/logo_chartres.png" height="85px" width="265px" alt="Logo de Chartres"
+                    id="logo-chartres"></a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <div class="search">
+                            <input type="search" placeholder="Que recherchez-vous... ?">
+                            <i><img src="img/loupe.png" height="25px" width="25px" alt="Loupe"></i>
+                        </div>
+                    </li>
+                    <div class="v-line"></div>
+                    <li>
+                        <a href="https://www.facebook.com/ChartresMetropoleOfficiel/" target="_blank"
+                            id="btn_facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/chartres-metropole/" target="_blank"
+                            id="btn_linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-haut-transversal/flux-rss"
+                            target="_blank" id="btn_flux"></a>
+                    </li>
+                    <div class="v-line"></div>
+                    <li>
+                        <a class="hamburger"><img src="img/hamburger.png" alt="Menu hamburger" id="hamburger"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!----------------------------------------------------FIN DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
 
-			</nav>
+    <!----------------------------------------------------DEBUT DE LA BARRE D'ACCES RAPIDE--------------------------------------------------------------------------------->
+    <div class="acces">
+        <ul>
+            <li>
+                <a href="https://www.chartres-metropole.fr/dynamique/deplacements/transports-urbains-et-non-urbains"
+                    target="_blank"><img src="img/mobilite.png" alt="Mobilite" width="60px"></a>
+            </li>
+            <p>
+                <a href="https://www.chartres-metropole.fr/dynamique/deplacements/transports-urbains-et-non-urbains"
+                    target="_blank"> Mobilité </a>
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.chartres-metropole.fr/responsable/dechets/collectes-des-dechets"
+                    target="_blank"><img src="img/poubelle.png" alt="Déchets" width="60px"></a>
+            </li>
+            <p>
+                <a href="https://www.chartres-metropole.fr/responsable/dechets/collectes-des-dechets" target="_blank">
+                    Gestion des <br>déchets </a>
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.chartres-metropole.fr/ambitieuse/grands-projets" target="_blank"><img
+                        src="img/projet.png" alt="Projets" width="60px"></a>
+            </li>
+            <p>
+                <a href="https://www.chartres-metropole.fr/ambitieuse/grands-projets" target="_blank"> Projets et
+                    <br>Innovation </a>
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.chartres-metropole.fr/eau-et-assainissement" target="_blank"><img
+                        src="img/robinet.png" alt="Eau" width="60px"></a>
+            </li>
+            <p>
+                <a href="https://www.chartres-metropole.fr/eau-et-assainissement" target="_blank"> Direction <br>de
+                    l'eau </a>
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.chartres-metropole.fr/dynamique/habitat" target="_blank"><img src="img/maison.png"
+                        alt="Habitat" width="70px"></a>
+            </li>
+            <p>
+                <a href="https://www.chartres-metropole.fr/dynamique/habitat" target="_blank"> Habitat </a>
+            </p>
+        </ul>
+    </div>
+    <!------------------------------------------------------FIN DE LA BARRE D'ACCES RAPIDE--------------------------------------------------------------------------------->
+    <h1 id="titre_magazine">Votre journal mensuel débarque en version digitale !</h1>
+    <h1 id="titre_actualites">Restez connectés avec les Actualités du mois !</h1>
+    <div id="actualites">
+        <div id="grand_journal">
+            <img id="image_journal" src="img/journal.png" alt="">
+        </div>
+        <div id="moyenne_actualite">
+            <div class="image_actu">
+                <img src="img/moyenne_actu.jpg" alt="">
+                <p>Entreprise</p>
+            </div>
+            <div class="texte_actus">
+                <h1>Nouveau : le service GeoPostal !</h1>
+                <p>Toujours prompt à développer de nouvelles solutions... </p>
+            </div>
+        </div>
+        <div id="petite_actualite_1">
+            <div class="image_actu">
+                <img src="img/petite_actu_1.jpg" alt="">
+                <p>Innovation</p>
+            </div>
+            <div class="texte_actus">
+                <h1>Les Bénéfiques, c'est qui ?</h1>
+                <p>Melinda et Nathalie se sont rencontrées il y a...</p>
+            </div>
+        </div>
+        <div id="petite_actualite_2">
+            <div class="image_actu">
+                <img src="img/petite_actu_2.jpg" alt="">
+                <p>Événement</p>
+            </div>
+            <div class="texte_actus">
+                <h1>Meeting aérien 2023 : appel à bénévoles</h1>
+                <p>Vous êtes passionné d’aviation...</p>
+            </div>
+        </div>
+        <div id="plus_actus" onclick="alert('Le bouton marche !')">
+            Toutes les actus >
+        </div>
+    </div>
 
-	
-		</header>
 
-		<!----------------------------------------------------FIN DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
-
-		<h1 aria-label="Chartres"></h1> 
-
-		<!----------------------------------------------------DEBUT DE LA BARRE D'ACCES RAPIDE--------------------------------------------------------------------------------->
-
-		<div class="acces">
-			<ul>
-				<li><a href="https://www.chartres-metropole.fr/dynamique/deplacements/transports-urbains-et-non-urbains" target="_blank"><img src="img/mobilite.png" alt="Mobilite" height="60px" width="60px"></a></li>
-				<li><a href="https://www.chartres-metropole.fr/dynamique/deplacements/transports-urbains-et-non-urbains" target="_blank"> Mobilité </a></li>
-			</ul>
-
-			<ul>
-				<li><a href="https://www.chartres-metropole.fr/responsable/dechets/collectes-des-dechets" target="_blank"><img src="img/poubelle.png" alt="Déchets" height="60px" width="60px"></a></li>
-				<li><a href="https://www.chartres-metropole.fr/responsable/dechets/collectes-des-dechets" target="_blank"> Gestion des <br>déchets </a></li>
-			</ul>
-				
-			<ul>
-				<li><a href="https://www.chartres-metropole.fr/ambitieuse/grands-projets" target="_blank"><img src="img/projet.png" alt="Projets" height="60px" width="60px"></a></li>
-				<li><a href="https://www.chartres-metropole.fr/ambitieuse/grands-projets" target="_blank"> Projets et <br>Innovation </a></li>
-			</ul>
-
-			<ul>
-				<li><a href="https://www.chartres-metropole.fr/eau-et-assainissement" target="_blank"><img src="img/robinet.png" alt="Eau" height="60px" width="60px"></a></li>
-				<li><a href="https://www.chartres-metropole.fr/eau-et-assainissement" target="_blank"> Direction <br>de l'eau </a></li>
-			</ul>
-	
-			<ul>
-				<li><a href="https://www.chartres-metropole.fr/dynamique/habitat" target="_blank"><img src="img/maison.png" alt="Habitat" height="60px" width="60px"></a></li>
-				<li><a href="https://www.chartres-metropole.fr/dynamique/habitat" target="_blank"> Habitat </a></li>
-			</ul>
-		</div>
-		<!------------------------------------------------------FIN DE LA BARRE D'ACCES RAPIDE--------------------------------------------------------------------------------->
-    
+    <h1 id="titre_agenda">Que faire à Chartres Métropole ?</h1>
+    <div id="agenda">
+        <div id="grand_agenda">
+            <div class="image_agenda">
+                <img src="img/grand_agenda.jpg" alt="">
+                <p>30 sep.</p>
+            </div>
+            <div class="texte_agenda">
+                <h2></h2>
+                <h1>Journée du développement durable</h1>
+            </div>
+        </div>
+        <div id="moyen_agenda_1">
+            <div class="image_agenda">
+                <img src="img/petit_agenda_1.jpg" alt="">
+                <p>24 sep.</p>
+            </div>
+            <div class="texte_agenda">
+                <h2>Animation et spectacle</h2>
+                <h1>Meeting aérien de Chartres</h1>
+            </div>
+        </div>
+        <div id="moyen_agenda_2">
+            <div class="image_agenda">
+                <img src="img/petit_agenda_2.jpg" alt="">
+                <p>15 avr. > 14 jan.</p>
+            </div>
+            <div class="texte_agenda">
+                <h2>Animation et spectacle</h2>
+                <h1>Chartres en lumières 2023</h1>
+            </div>
+        </div>
+        <div id="plus_agenda" onclick="alert('Le bouton marche !')">
+            Tout l'agenda >
+        </div>
+    </div>
     <!------------------------------------------------------Debut chiffres clefs------------------------------------------------------>
     <div id="container-chiffre">
         <div class="titre" id="titre-chiffre">
@@ -121,19 +221,14 @@
     <a href="territoire"></a>
     <iframe src="communes.html" frameborder="0"></iframe>
     <!------------------------------------------------------Fin Communes------------------------------------------------------>
-    
     <footer>
         <div class="container-footer">
             <div class="container-adresse">
                 <div class="logo-footer">
-                    <img src="img/logo-chartres.png" alt="logo-chartres">
-                    <p>
-                        <span style="font-weight: bold;"> Chartres </span> <br>
-                        <span style="font-size: 21px;"> Métropole </span>
-                    </p>
+                    <img src="img/logo_chartres.png" alt="logo-chartres">
                 </div>
                 <p class="adresse">
-                    <span> Hotel d'Agglomération </span><br>
+                    <strong> Hotel d'Agglomération </strong><br>
                     Place des Halles <br>
                     28019 Chartres Cedex <br><br>
                     Tél : 02 37 23 40 00
@@ -141,11 +236,11 @@
             </div>
             <div class="container-liens">
                 <div class="newsletter">
-                    <p> S'abonner à la newsletter : </p>
+                    <p> Abonnez-vous à la newsletter pour savoir toutes les actualités !</p>
                     <input type="text" name="news-letter" id="input-news" placeholder="Saisissez votre email..."
-                        style="font-weight: bold; font-size: 15px">
+                        style="font-weight: bold;">
                     <button id="btn-news">
-                        <img src="img/logo-verifie.png" alt="logo-verifie" style="width: 40%;">
+                        <img src="img/logo-verifie.png" alt="logo-verifie" style="width: 28%;">
                     </button>
                 </div>
                 <div>
@@ -167,7 +262,7 @@
                         </a>
                         <a href="https://www.chartres-metropole.fr/contacts/menu-bas-transversal/credits"
                             target="_blank">
-                            <li>Crédits</li>
+                            <li id="last">Crédits</li>
                         </a>
                     </ul>
                 </div>
@@ -175,5 +270,5 @@
         </div>
     </footer>
 </body>
- 
+
 </html>

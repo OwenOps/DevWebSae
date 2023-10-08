@@ -82,14 +82,19 @@ area {
     bottom: 75px;
     margin: 0 auto;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 12px;
     width: 25%;
-    background: #FFF;
+    background: #538E52;
     height: 30px;
-    color: #000;
+    color: white;
     font-family: Comfortaa;
     font-weight: bold;
     cursor: pointer;
+}
+
+#choix-agglo option {
+    background-color: white;
+    color: black;
 }
 
 #description-commune {
@@ -98,31 +103,32 @@ area {
     flex-direction: column;
     border-radius: 30px;
     background: #F0EDED;
-    max-height: 390px;
+    max-height: 420px;
     overflow: auto;
     width: 70%;
 }
 
 #description-commune h4 {
     text-align: center;
-    margin: 15px 0;
-    color: #538E52;
+    margin: 20px 0px;
+    color: #323488;
     font-family: Comfortaa;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 #description-commune p,
 .liste-clef {
     display: flex;
-    margin: 0 12px;
-    color: #585858;
+    margin: 0 28px;
+    color: #474040;
     font-family: Comfortaa;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
     list-style: none;
+    text-align: justify;
 }
 
 .img-description {
@@ -143,7 +149,7 @@ area {
 .lien-commune {
     cursor: pointer;
     margin-bottom: 12px;
-    color: #007FFF !important;
+    color: #205792 !important;
     text-decoration: underline !important;
 }
 
@@ -181,13 +187,12 @@ area {
     }
 
     #choix-agglo {
+        font-size: 15px;
         width: 65%;
     }
-}
 
-@media screen and (max-width: 490px) {
-    #choix-agglo option{
-        font-size: 15px;
+    #choix-agglo option {
+        font-size: 12px;
     }
 }
 
