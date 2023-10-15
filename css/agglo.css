@@ -154,7 +154,7 @@ header {
 }
 
 .conteneur a {
-    color: #ffffffed;
+    color: #ffffffed !important;
     font-size: 20px;
     display: block;
     margin: 35px 0;
@@ -223,16 +223,20 @@ header {
 }
 
 .titre p {
-    background-color: rgba(255, 255, 255, 0.74);
     padding: 25px 10px;
     border-radius: 15px;
     width: 60%;
     margin: 0 auto;
-    color: #585858;
+    color: #474747;
     font-family: Comfortaa;
     font-size: 18px;
     font-style: normal;
     line-height: 35px;
+}
+
+.titre p span {
+    color: #21871f;
+    font-weight: bold;
 }
 
 #decouvrir {

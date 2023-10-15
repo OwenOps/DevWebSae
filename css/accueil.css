@@ -398,6 +398,7 @@ header h1 {
     right: 2%;
     bottom: 3%;
     cursor: pointer;
+    z-index: 1;
 }
 
 /* ----------------------------------------- FIN BOUTON REMONTER ----------------------------------------- */
