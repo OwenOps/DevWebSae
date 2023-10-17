@@ -169,19 +169,6 @@ header h1 {
 }
 /* ----------------------------------------- FIN TEXTE ANIME ----------------------------------------- */
 
-/* ----------------------------------------- DEBUT BOUTON REMONTER ----------------------------------------- */
-#remonter {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    right: 2%;
-    bottom: 3%;
-    cursor: pointer;
-    z-index: 1;
-}
-/* ----------------------------------------- FIN BOUTON REMONTER ----------------------------------------- */
-
-
 /* -------------------------------------------- PROPRIETES ACTUS/AGENDA ---------------------------------------------- */
 
 #agenda, #actualites {
@@ -196,7 +183,6 @@ header h1 {
 #actualites {
     height: 600px;
 }
-
 
 /* ---------------------------------------------- TITRES AGENDA/ACTUS ------------------------------------------------ */
 
@@ -372,17 +358,12 @@ header h1 {
 }
 /* ------------------------------------------- BOUTON PLUS D'ACTUS / AGENDA ------------------------------------------ */
 
-button { all: unset }
-
 #plus_actus, #plus_agenda {
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: white;
-
     background-color: #538e52;
-
     margin: 1% 0 0 1%;
     width: 23%;
     height: 6%;

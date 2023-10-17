@@ -20,7 +20,7 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/transport_banniere.jpg);
+    background-image: url(../img/transport/transport_banniere.jpg);
     background-size: cover;
 }
 
@@ -195,17 +195,14 @@ h4 {
         display: block;
     }
 }
-
-
 /*-----------------------------------FIN BLOC INFORMATIONS TRANSPORT-----------------------------------------*/
 
 /*----------------------------------- DEBUT DU CAROUSEL -----------------------------------------*/
-
-
 #carousel {
     width: 60%;
     margin: auto;
     height: 100%;
+    margin-bottom: 70px;
 }
 
 .carousel-control-prev-icon {

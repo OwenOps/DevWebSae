@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/agglo.css">
     <link rel="stylesheet" type="text/css" href="css/commun.css">
-    <script src="js/agglo.js"></script>
+    <script src="js/commun.js"></script>
     <title> Agglomération </title>
 </head>
 
 <body>
     <!--------------------------------------------------DEBUT DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
     <header>
-        <h1 aria-label="Chartres"></h1>
         <nav class="navbar">
-            <a href="accueil.html"><img src="img/logo_chartres.png" height="80px" width="260px" alt="Logo de Chartres" id="logo-chartres"></a>
+            <a href="accueil.html"><img src="img/logo_chartres.png" height="80px" width="260px" alt="Logo de Chartres"
+                    id="logo-chartres"></a>
             <div class="nav-links">
                 <ul>
                     <li>
@@ -25,17 +25,20 @@
                             <i><img src="img/loupe.png" height="25px" width="25px" alt="Loupe"></i>
                         </div>
                     </li>
-                        <div class="v-line"></div>
+                    <div class="v-line"></div>
                     <li>
-                        <a href="https://www.facebook.com/ChartresMetropoleOfficiel/" target="_blank" id="btn_facebook"></a>
+                        <a href="https://www.facebook.com/ChartresMetropoleOfficiel/" target="_blank"
+                            id="btn_facebook"></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/chartres-metropole/" target="_blank" id="btn_linkedin"></a>
+                        <a href="https://www.linkedin.com/company/chartres-metropole/" target="_blank"
+                            id="btn_linkedin"></a>
                     </li>
                     <li>
-                        <a href="https://www.chartres-metropole.fr/contacts/menu-haut-transversal/flux-rss" target="_blank" id="btn_flux"></a>
+                        <a href="https://www.chartres-metropole.fr/contacts/menu-haut-transversal/flux-rss"
+                            target="_blank" id="btn_flux"></a>
                     </li>
-                        <div class="v-line"></div>
+                    <div class="v-line"></div>
                     <li>
                         <a class="hamburger">
                             <button type="button" aria-label="toggle curtain navigation" class="conteneur-toggler">
@@ -43,7 +46,7 @@
                                 <span class="line l2"></span>
                                 <span class="line l3"></span>
                             </button>
-                        </a>                    
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -54,15 +57,17 @@
             <a href="https://www.chartres-metropole.fr/attractive" target="_blank"> Attractive </a>
             <a href="https://www.chartres-metropole.fr/responsable" target="_blank"> Reponsable </a>
             <a href="https://www.chartres-metropole.fr/ambitieuse" target="_blank"> Ambitieuse </a>
-          </nav>
+        </nav>
+        <div class="titre" id="titre-agglo">
+            <h4 class="titre-commune animate__animated animate__backInLeft" id="h4-agglo">
+                Agglomération
+            </h4>
+        </div>
     </header>
     <!----------------------------------------------------FIN DE LA BARRE DE NAVIGATION--------------------------------------------------------------------------------->
-    
+
     <!----------------------------------------------------Debut Presentation------------------------------------------------------>
-    <div class="titre">
-        <h4 class="titre-commune animate__animated animate__backInLeft">
-            Agglomération
-        </h4>
+    <div id="presentation">
         <p>
             Chartres Agglomération est une communauté d'agglomération située en <span>Eure-et-Loir</span>, en région
             Centre-Val de
@@ -81,7 +86,7 @@
 
     <!----------------------------------------------------Debut Contenu------------------------------------------------------>
     <div class="titre">
-        <h4 class="titre-commune animate__animated animate__backInRight" id="decouvrir">
+        <h4 class="titre-commune " id="decouvrir">
             Decouvrir
         </h4>
     </div>
@@ -277,6 +282,9 @@
                 </p>
             </div>
         </div>
+    </div>
+    <div id="remonter">
+        <img src="img/up_button.png" class="btn_remonter" height="40px" width="40px">
     </div>
     <!----------------------------------------------------Fin Contenu------------------------------------------------------>
     <footer>

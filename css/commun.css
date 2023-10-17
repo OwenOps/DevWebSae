@@ -244,7 +244,6 @@ a {
 /* ------------------------------------------------ FIN DE LA NAVBAR ------------------------------------------------ */
 
 /* ----------------------------------------- DEBUT BOUTON REMONTER ----------------------------------------- */
-
 #remonter {
     display: flex;
     align-items: center;
@@ -260,7 +259,6 @@ a {
         right: 3%;
     }
 }
-
 /* ----------------------------------------- FIN BOUTON REMONTER ----------------------------------------- */
 
 /*----------------------------------------- DEBUT DU FOOTER -----------------------------------------*/
@@ -333,12 +331,12 @@ footer {
 }
 
 .newsletter input,
-.newsletter button {
+#btn-news {
     position: relative;
     bottom: 4px;
 }
 
-.newsletter button {
+#btn-news {
     width: 5%;
     border-radius: 10px;
     background-color: #538E52;
@@ -351,21 +349,16 @@ footer {
     cursor: pointer;
 }
 
-.newsletter img {
-    position: relative;
-    left: 20px;
-}
-
-.newsletter button:active {
+#btn-news:active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
-.newsletter button:focus {
+#btn-news:focus {
     outline: none;
 }
 
-.newsletter button:after {
+#btn-news:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -376,7 +369,7 @@ footer {
     transition: all 0.5s ease;
 }
 
-.newsletter button:hover:after {
+#btn-news:hover:after {
     width: 210px;
     height: 200px;
     opacity: 1;
@@ -405,10 +398,6 @@ footer {
 
     .newsletter p {
         font-size: 18px;
-    }
-
-    .newsletter img {
-        left: 15px;
     }
 
     .liste-liens li {
@@ -482,15 +471,11 @@ footer {
         width: 52%;
     }
 
-    .newsletter button {
+    #btn-news {
         right: inherit;
         left: 120px;
         bottom: 48px;
         width: 9%;
-    }
-
-    .newsletter img {
-        left: 22px;
     }
 
     .newsletter p,
@@ -533,7 +518,7 @@ footer {
 }
 
 @media screen and (max-width: 475px) {
-    .newsletter button {
+    #btn-news {
         width: 12%;
     }
 
@@ -543,7 +528,7 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-    .newsletter button {
+    #btn-news {
         width: 13%;
     }
 
@@ -551,5 +536,4 @@ footer {
         width: 80%;
     }
 }
-
 /*----------------------------------------- FIN DU FOOTER -----------------------------------------*/
