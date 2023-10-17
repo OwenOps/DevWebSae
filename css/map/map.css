@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -10,7 +10,6 @@ a {
 }
 
 body {
-    font-family: Comfortaa, sans-serif;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -51,6 +50,7 @@ area {
     display: flex;
     justify-content: center;
     color: #000000;
+    font-family: Comfortaa;
     font-size: 35px;
     font-weight: 400;
 }
@@ -88,6 +88,7 @@ area {
     height: 35px;
     color: white;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
@@ -109,8 +110,9 @@ area {
 
 #description-commune h4 {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0px;
     color: #323488;
+    font-family: Comfortaa;
     font-size: 30px;
     font-weight: 700;
 }
@@ -120,6 +122,7 @@ area {
     display: flex;
     margin: 0 28px;
     color: #474040;
+    font-family: Comfortaa;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
