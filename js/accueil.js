@@ -27,7 +27,7 @@ function newsLetter() {
 
 function counter() {
     $('.num').counterUp({
-        time: 2000,
+        time: 1200,
     });
 }
 
