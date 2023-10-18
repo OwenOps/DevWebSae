@@ -25,44 +25,23 @@ header {
     text-align: center;
 }
 
-#titre-agglo {
-    position: relative;
-    top: 50vh;
-}
-
-#h4-agglo {
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    background-color: rgba(30, 57, 112, 0.633);
-    border-radius: 10px;
-    height: 80px;
-    align-items: center;
-    width: 25%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombre floue */
-    backdrop-filter: blur(5px); /* Flou de l'arrière-plan */
-}
-
-.titre-commune {
-    font-family: Comfortaa;
-    margin: 40px auto;
-    font-size: 40px;
-    font-weight: 400;
-    width: 65%;
-}
-
 #presentation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 38vh;
     text-align: center;
     padding: 25px 10px;
     border-radius: 15px;
     width: 60%;
     margin: 0 auto;
-    margin-top: 20px;
-    color: #474747;
-    font-family: Comfortaa;
-    font-size: 18px;
+    color: #000000;
+    font-family: 'Segoe UI';
+    font-size: 19px;
     font-style: normal;
     line-height: 35px;
+    background: rgba(234, 234, 234, 0.863);
+    backdrop-filter: blur(1px);
 }
 
 #presentation span {
@@ -70,37 +49,49 @@ header {
     font-weight: bold;
 }
 
+#h4-agglo {
+    display: flex;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.titre-commune {
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 400;
+    width: 65%;
+}
+
 #decouvrir {
     color: #28294C;
     border-top: 1px solid rgb(136, 136, 136);
-    padding-top: 70px;
+    padding-top: 60px;
     margin-bottom: 100px;
+    margin-top: 40px;
 }
 
-@media screen and (max-width: 1260px) {
-    #h4-agglo {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 1260px) {
-    #h4-agglo {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 850px) {
     #presentation {
         width: 85%;
         font-size: 15px;
-    }
-
-    #h4-agglo {
-        width: 82%;
+        backdrop-filter: none;
     }
 
     .titre-commune {
         margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #presentation {
+        width: 95%;
+        font-size: 15px;
+    }
+
+    #presentation p:nth-child(2) {
+        display: none;
     }
 }
 /*--------------------Fin Agglo presentation--------------------*/
