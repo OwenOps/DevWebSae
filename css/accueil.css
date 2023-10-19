@@ -12,38 +12,6 @@ header {
 
 /* ------------------------------------------------ FIN IMAGE DE BACKGROUND ------------------------------------------------ */
 
-@media screen and (max-width: 980px) {
-    .search {
-        position: absolute;
-        top: 360px;
-        width: 30%;
-        left: 35%;
-    }
-}
-
-@media (max-width: 890px) {
-    .search {
-        width: 300px;
-    }
-}
-
-@media (max-width: 630px) {
-    .search {
-        top: 210px;
-        width: 350px;
-        left: 25%;
-    }
-}
-
-
-@media screen and (max-width: 980px) {
-    .nav-links ul li:not(:last-child):not(:first-child),
-    .v-line,
-    header h1 {
-        display: none;
-    }
-}
-
 /* --------------------------------------- DEBUT DE LA BARRE D'ACCES RAPIDE ----------------------------------------- */
 .acces {
     display: flex;
@@ -63,7 +31,6 @@ header {
     text-align: center;
     margin: 0px 21px;
     padding-top: 20px;
-
 }
 
 .acces ul img {
@@ -116,20 +83,30 @@ header {
 
 @media screen and (max-width: 700px) {
     .acces {
-        width: 80%;
-        left: 10%;
+        width: 90%;
+        left: 5%;
     }
 }
 
 @media screen and (max-width: 630px) {
     .acces {
         flex-wrap: wrap;
-        height: 320px;
-        top: 50%;
+
     }
 
     .acces ul {
         padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .acces {
+        height: 325px;
+        top: 50%;
+    }
+
+    .acces ul {
+        padding-top: 30px;
     }
 }
 
@@ -149,22 +126,29 @@ header h1 {
     color: #415192ab;
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1450px) {
     header h1 {
-        left: 4%;
+        font-size: 34px;
+        left: 60%;
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1250px) {
     header h1 {
-        left: 15%;
+        left: 10%;
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 900px) {
     header h1 {
-        left: 35%;
-        width: 40%;
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    header h1 {
+        top: 25%;
+        left: 25%;
     }
 }
 /* ----------------------------------------- FIN TEXTE ANIME ----------------------------------------- */
