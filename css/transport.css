@@ -195,6 +195,16 @@ h4 {
         display: block;
     }
 }
+
+@media screen and (max-width: 476px) {
+    #logo_filibus {
+        display: none
+    }
+
+    #presentation {
+        margin: 0 auto;
+    }
+}
 /*-----------------------------------FIN BLOC INFORMATIONS TRANSPORT-----------------------------------------*/
 
 /*----------------------------------- DEBUT DU CAROUSEL -----------------------------------------*/
