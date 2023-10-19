@@ -87,36 +87,39 @@ a {
 
 @media screen and (max-width: 980px) {
     .nav-links ul li:not(:last-child):not(:first-child),
-    .v-line,
-    header h1 {
+    .v-line {
         display: none;
     }
 }
 
-@media (max-width: 470px) {
-    #logo-chartres {
-        margin-top: 15px;
-        width: 100%;
-        height: auto;
+@media (max-width: 720px) {
+    .navbar .nav-links .search {
+        display: none;
+        
     }
 
+    .nav-links ul li:first-child {
+        display: none;
+    }
+
+    .nav-links ul {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 11.9%;
+    }
+}
+
+@media (max-width: 410px) {
     .navbar a {
-        width: 50%;
-        margin-bottom: 30px;
+        width: 60%;
     }
 
-    .search {
-        width: 250px;
-        left: 18%;
-    }
-
-    .search input {
-        width: 600px;
-    }
-
-    .hamburger {
-        position: relative;
-        bottom: 15px;
+    #logo-chartres {
+        width: 98%;
+        height: auto;
     }
 }
 /* -------- FIN DE LA BARRE DE RECHERCHE ----------- */
@@ -162,8 +165,8 @@ a {
 .conteneur {
     position: fixed;
     z-index: 10;
-    width: 25%;
-    height: 87.7%;
+    width: 305px;
+    height: 87.9%;
     bottom: 0;
     right: 0;
     display: flex;
@@ -252,11 +255,17 @@ a {
     bottom: 3%;
     cursor: pointer;
     z-index: 8;
+    justify-content: end;
+}
+
+#remonter img {
+    width: 12%;
+    height: auto;
 }
 
 @media screen and (max-width: 1400px) {
-    #remonter {
-        right: 3%;
+    #remonter img {
+        width: 10%;
     }
 }
 /* ----------------------------------------- FIN BOUTON REMONTER ----------------------------------------- */
