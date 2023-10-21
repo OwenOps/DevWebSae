@@ -1,5 +1,9 @@
+* {
+    list-style: none;
+}
+
 body {
-    background-color: #dedede;
+    background-color: #e3e3e3;
 }
 
 /* ------------------------------------------------ DEBUT IMAGE DE BACKGROUND ------------------------------------------------ */
@@ -363,6 +367,7 @@ header h1 {
 }
 
 /* -------------------------------------------------- FIN ACTUS/AGENDA ----------------------------------------------- */
+
 /*-----------------------------------------Debut Chiffre cles-----------------------------------------*/
 #container-liste {
     background-color: white;
@@ -392,6 +397,10 @@ header h1 {
     color: #585858;
 }
 
+.num {
+    color:#0e470ea7;
+}
+
 @media screen and (max-width: 720px) {
     #liste-chiffre {
         flex-direction: column;
@@ -416,25 +425,50 @@ header h1 {
 /*-----------------------------------------Fin Chiffre cles-----------------------------------------*/
 
 /*-----------------------------------------Debut Communes-----------------------------------------*/
-.titre {
+
+.titre-commune1 {
+    color: #323488;
+    font-family:'Trebuchet MS';
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px auto;
+    border-top: 1px solid rgb(23, 32, 113) ;
+    padding-top: 30px;
+    width: 70%;
     display: flex;
     flex-direction: column;
+}
+
+.titre-commune2 {
+    color: #323488;
+    font-family:'Trebuchet MS';
+    letter-spacing: 1.3px;
+    font-size: 35px;
+    margin: 40px auto;
+    width: 100%;
+    display: table;
+    white-space: nowrap;
     text-align: center;
 }
 
-.titre-commune {
-    color: #28294C;
-    font-size: 35px;
-    font-weight: 400;
-    margin: 40px auto;
-    border-top: 1px solid hsla(0, 0%, 0%, 0.381);
-    padding-top: 40px;
-    width: 65%;
+.titre-commune2:before, .titre-commune2:after {
+    content: "";
+    display: table-cell;
+    width: 600px; /*ecartement des espace */
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) repeat-x left center;
 }
+
 
 iframe {
     width: 100%;
     height: 80%;
+}
+
+@media screen and (max-width: 1400px) {
+    .titre-commune2:before, .titre-commune2:after {
+        width: 37%; 
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -444,6 +478,16 @@ iframe {
 
     .titre-commune {
         margin-bottom: 15px;
+    }
+
+    .titre-commune2:before, .titre-commune2:after {
+        width: 33%; 
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .titre-commune2:before, .titre-commune2:after {
+        width: 20%; 
     }
 }
 

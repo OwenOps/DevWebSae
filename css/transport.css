@@ -44,8 +44,33 @@ h4 {
     display: flex;
     position: relative;
     left: 25%;
-    bottom: 29%;
+    top: 65%;
     color: #32427f;
+}
+
+#plus {
+    width: 48.2%;
+    position: relative;
+    left: 25%;
+    top: 53%;
+    margin-top: .5%;
+    font-size: 20.2px;
+    font-style: italic;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color:#ffffff;
+    text-align: right;
+
+}
+
+#plus :hover {
+    color:#2447d5;
+}
+
+@media screen and (max-width: 690px) {
+    #plus {
+        font-size: 15.2px;
+    }
+
 }
 
 .rechercher input { /* Ciblage de la barre de recherche */
@@ -68,6 +93,7 @@ h4 {
     font-size: 25px;
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.381);
     padding-bottom: 2.3%;
+    padding-top: 2.5%;
     letter-spacing: 1px;
 }
  
