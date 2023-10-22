@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: Comfortaa, sans-serif;
     height: 100vh;
     scroll-behavior: smooth;
 }
@@ -75,8 +74,9 @@ a {
     border-color: white;
     border-style: none;
     background-color: white;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: .8px;
+    font-family: Comfortaa, sans-serif;
 }
 
 .search i { /* Ciblage de la loupe */
@@ -166,7 +166,7 @@ a {
     position: fixed;
     z-index: 10;
     width: 305px;
-    height: 87.9%;
+    height: 89%;
     bottom: 0;
     right: 0;
     display: flex;
@@ -176,6 +176,7 @@ a {
     background: rgba(30, 57, 112, 0.959);
     transform: translateX(100%);
     transition: transform 0.6s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+
 }
 
 .conteneur.active { 
@@ -191,6 +192,8 @@ a {
     text-decoration: none;
     background: linear-gradient(to top, #538e52a7 0%, #7dc07ca7 10%, transparent 5%) no-repeat left bottom / 0 100%;
     transition: background-size .4s;
+    font-family: Comfortaa, sans-serif;
+    font-size: 19px;
 
 }
 
@@ -278,6 +281,7 @@ footer {
     background-color: #222D53;
     color: rgb(255, 255, 255);
     flex-shrink: 0;
+    font-family: Comfortaa, sans-serif;
 }
 
 .newsletter,
@@ -327,7 +331,7 @@ footer {
 .newsletter p {
     width: 37%;
     margin-right: 40px;
-    font-size: 25px;
+    font-size: 19px;
 }
 
 .newsletter input {
@@ -336,7 +340,7 @@ footer {
     height: 35px;
     border: none;
     padding-left: 15px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .newsletter input,

@@ -1,4 +1,8 @@
 body {
+    font-family: 'Segoe UI';
+}
+
+body {
     background-color: #ededed;
 }
 
@@ -16,7 +20,7 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/transport/transport_banniere.jpg);
+    background: url(../img/transport/transport_banniere.jpg);
     background-size: cover;
 }
 
@@ -27,11 +31,12 @@ h4 {
     margin: 0 auto;
     display: flex;
     position: relative;
-    font-size: 45px;
+    font-size: 48px;
     text-align: center;
     top: 40%;
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
+    font-family: 'Lucida Sans', sans-serif;
 }
 
 .rechercher {
@@ -103,8 +108,9 @@ h4 {
 
 #titre_journal {
     width: 100%;
-    font-size: 20px;
+    font-size: 19px;
     color: #32427f;
+    font-family: Comfortaa, sans-serif;
     text-align: center;
 }
 

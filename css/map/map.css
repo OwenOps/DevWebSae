@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
+    font-family: Comfortaa, sans-serif;
 }
 
 .mapping {
@@ -45,24 +46,6 @@ area {
 }
 
 /********************Debut Communes********************/
-.titre-commune {
-    margin: 50px 0 130px;
-    display: flex;
-    justify-content: center;
-    color: #000000;
-    font-family: Comfortaa;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-.titre-commune::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.308);
-    top: 20px;
-}
 
 .nos-communes {
     display: flex;
@@ -89,7 +72,7 @@ area {
     color: white;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #choix-agglo option {
@@ -113,7 +96,7 @@ area {
     margin: 20px 0px;
     color: #323488;
     font-family: Comfortaa;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -123,7 +106,7 @@ area {
     margin: 0 28px;
     color: #474040;
     font-family: Comfortaa;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
