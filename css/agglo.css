@@ -7,7 +7,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     list-style: none;
-    font-family: Comfortaa, sans-serif;
 }
 
 /* ------------------------------------------------ DEBUT IMAGE DE BACKGROUND ------------------------------------------------ */
@@ -68,8 +67,8 @@ header {
 }
 
 #decouvrir {
-    color: #28294C;
-    border-top: 1px solid rgb(136, 136, 136);
+    color: #323488;
+    border-top: 1px solid rgb(23, 32, 113) ;
     padding-top: 60px;
     margin-bottom: 100px;
     margin-top: 40px;
@@ -180,6 +179,10 @@ header {
         display: none;
         height: auto;
     }
+
+    #cadre-ligne2 > div:last-child {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 1085px) {
@@ -190,6 +193,10 @@ header {
 
 @media screen and (max-width: 750px) {
     .cadre2 {
+        width: 50%;
+    }
+
+    #cadre-ligne2 > div:last-child {
         width: 50%;
     }
 }

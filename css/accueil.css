@@ -417,9 +417,6 @@ header h1 {
 }
 
 /* ------------------------------------------- BOUTON PLUS D'ACTUS / AGENDA ------------------------------------------ */
-
-button { all: unset }
-
 #plus_actus, #plus_agenda {
     display: flex;
     justify-content: center;
