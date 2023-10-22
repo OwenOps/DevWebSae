@@ -36,11 +36,10 @@ header {
     top: 38vh;
     text-align: center;
     padding: 25px 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 60%;
     margin: 0 auto;
     color: #323488;
-    font-family: 'Segoe UI';
     font-size: 19px;
     font-style: normal;
     line-height: 35px;
@@ -56,7 +55,6 @@ header {
 #h4-agglo {
     display: flex;
     justify-content: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     margin-top: 0px;
     margin-bottom: 40px;
 }
@@ -122,7 +120,7 @@ header {
 .cadre,
 .cadre2 {
     text-align: center;
-    border-radius: 9px;
+    border-radius: 20px;
     border: 1px solid rgb(136, 136, 136);
     padding: 10px; 
     background-color: #fff; 
@@ -142,6 +140,7 @@ header {
 }
 
 .cadre-image img {
+    border-radius: 20px;
     max-width: 100%; 
 }
 

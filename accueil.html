@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <script src="js/accueil.js"></script>
     <script src="js/commun.js"></script>
     <title> Chartres </title>
@@ -118,14 +119,17 @@
     </div>
 
     <!------------------------------------------------------FIN DE LA BARRE D'ACCES RAPIDE--------------------------------------------------------------------------------->
-    
-    <h1 id="titre_magazine">Votre journal mensuel débarque en version digitale !</h1>
-    <h1 id="titre_actualites">Restez connectés avec les Actualités du mois !</h1>
+
+    <div class="titre">
+        <h4 class="titre-commune">
+            Actualités
+        </h4>
+    </div>
     <div id="actualites">
-        <div id="grand_journal">
+        <a id="grand_journal" href="https://www.chartres-metropole.fr/fileadmin/user_upload/documents/agglo/Gestion_documentaire/votre-agglo/2023/votre-agglo-124-magazine-chartres-metropole.pdf">
             <img id="image_journal" src="img/actus/journal.png" alt="image-journal">
-        </div>
-        <div id="moyenne_actualite">
+        </a>
+        <a id="moyenne_actualite" href="https://www.chartres-metropole.fr/actualites/detail/geode-un-nouveau-service-eco-responsable">
             <div class="image_actu">
                 <img src="img/actus/moyenne_actu.jpg" alt="image-actu">
                 <p>Entreprise</p>
@@ -134,8 +138,8 @@
                 <h1>Nouveau : le service GeoPostal !</h1>
                 <p>Toujours prompt à développer de nouvelles solutions... </p>
             </div>
-        </div>
-        <div id="petite_actualite_1">
+        </a>
+        <a id="petite_actualite_1" href="actu-1.html">
             <div class="image_actu">
                 <img src="img/actus/petite_actu_1.jpg" alt="image-actu2">
                 <p>Innovation</p>
@@ -144,8 +148,8 @@
                 <h1>Les Bénéfiques, c'est qui ?</h1>
                 <p>Melinda et Nathalie se sont rencontrées il y a...</p>
             </div>
-        </div>
-        <div id="petite_actualite_2">
+        </a>
+        <a id="petite_actualite_2" href="https://www.chartres-metropole.fr/ambitieuse/grands-projets/modernisation-de-laerodrome">
             <div class="image_actu">
                 <img src="img/actus/petite_actu_2.jpg" alt="image-actu3">
                 <p>Événement</p>
@@ -154,53 +158,59 @@
                 <h1>Meeting aérien 2023 : appel à bénévoles</h1>
                 <p>Vous êtes passionné d’aviation...</p>
             </div>
-        </div>
-        <div id="plus_actus" onclick="alert('Le bouton marche !')">
+        </a>
+        <a id="plus_actus" href="https://www.chartres-metropole.fr/actualites">
             Toutes les actus >
-        </div>
+        </a>
     </div>
 
+    <div>
+        <div class="titre">
+            <h4 class="titre-commune">
+                Que faire à Chartres Métropole ?
+            </h4>
+        </div>
 
-    <h1 id="titre_agenda">Que faire à Chartres Métropole ?</h1>
-    <div id="agenda">
-        <div id="grand_agenda">
-            <div class="image_agenda">
-                <img src="img/agenda/grand_agenda.jpg" alt="image agenda1">
-                <p>30 sep.</p>
-            </div>
-            <div class="texte_agenda">
-                <h2></h2>
-                <h1>Journée du développement durable</h1>
-            </div>
-        </div>
-        <div id="moyen_agenda_1">
-            <div class="image_agenda">
-                <img src="img/agenda/petit_agenda_1.jpg" alt="image agenda2">
-                <p>24 sep.</p>
-            </div>
-            <div class="texte_agenda">
-                <h2>Animation et spectacle</h2>
-                <h1>Meeting aérien de Chartres</h1>
-            </div>
-        </div>
-        <div id="moyen_agenda_2">
-            <div class="image_agenda">
-                <img src="img/agenda/petit_agenda_2.jpg" alt="image agenda3">
-                <p>15 avr. > 14 jan.</p>
-            </div>
-            <div class="texte_agenda">
-                <h2>Animation et spectacle</h2>
-                <h1>Chartres en lumières 2023</h1>
-            </div>
-        </div>
-        <div id="plus_agenda" onclick="alert('Le bouton marche !')">
-            Tout l'agenda >
+        <div id="agenda">
+            <a id="grand_agenda" href="https://www.chartres-metropole.fr/semaine-developpement-durable">
+                <div class="image_agenda">
+                    <img src="img/agenda/grand_agenda.jpg" alt="image agenda1">
+                    <p>30 sep.</p>
+                </div>
+                <div class="texte_agenda">
+                    <h2></h2>
+                    <h1>Journée du développement durable</h1>
+                </div>
+            </a>
+            <a id="moyen_agenda_1" href="https://www.chartres-metropole.fr/ambitieuse/grands-projets/modernisation-de-laerodrome">
+                <div class="image_agenda">
+                    <img src="img/agenda/petit_agenda_1.jpg" alt="image agenda2">
+                    <p>24 sep.</p>
+                </div>
+                <div class="texte_agenda">
+                    <h2>Animation et spectacle</h2>
+                    <h1>Meeting aérien de Chartres</h1>
+                </div>
+            </a>
+            <a id="moyen_agenda_2" href="https://www.chartres-metropole.fr/actualites/detail/nocturne-de-chartres-en-lumieres-chartres">
+                <div class="image_agenda">
+                    <img src="img/agenda/petit_agenda_2.jpg" alt="image agenda3">
+                    <p>15 avr. > 14 jan.</p>
+                </div>
+                <div class="texte_agenda">
+                    <h2>Animation et spectacle</h2>
+                    <h1>Chartres en lumières 2023</h1>
+                </div>
+            </a>
+            <a id="plus_agenda" href="https://www.chartres-metropole.fr/agenda">
+                Tout l'agenda >
+            </a>
         </div>
     </div>
     <!------------------------------------------------------Debut chiffres clefs------------------------------------------------------>
     <div id="container-chiffre">
-        <div id="titre-chiffre">
-            <h4 class="titre-commune1">
+        <div class="titre">
+            <h4 class="titre-commune">
                 Chiffres-clés
             </h4>
         </div>
@@ -226,9 +236,11 @@
     <!------------------------------------------------------Fin chiffres clefs------------------------------------------------------>
 
     <!------------------------------------------------------Debut Communes------------------------------------------------------>
-    <h4 class="titre-commune2"> 
-        Nos Communes
-    </h4>
+    <div class="titre">
+        <h4 class="titre-commune">
+            Nos Communes
+        </h4>
+    </div>
 
     <a href="territoire"></a>
     <iframe src="communes.html" frameborder="0"></iframe>

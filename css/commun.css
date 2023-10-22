@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-body { 
+body {
+    font-family: Comfortaa, sans-serif;
     height: 100vh;
     scroll-behavior: smooth;
 }

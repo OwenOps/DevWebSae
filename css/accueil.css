@@ -10,7 +10,7 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/cathedrale.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(../img/cathedrale.jpg);
     background-size: cover;
 }
 
@@ -33,7 +33,7 @@ header {
 
 .acces ul {
     text-align: center;
-    margin: 0px 21px;
+    margin: 0 21px;
     padding-top: 20px;
 }
 
@@ -124,10 +124,10 @@ header h1 {
     width: 37%;
     font-family: "Gill Sans", "Gill Sans MT", sans-serif;
     font-style: italic;
-    font-weight: 250px;
+    font-weight: 500;
     font-size: 40px;
     letter-spacing: 1px;
-    color: #415192ab;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 1450px) {
@@ -160,16 +160,31 @@ header h1 {
 /* -------------------------------------------- PROPRIETES ACTUS/AGENDA ---------------------------------------------- */
 
 #agenda, #actualites {
-    margin: 5% 10% 5% 10%;
     border-radius: 20px;
+    margin: 0 10% 0 10%;
 }
 
 #agenda {
-    height: 400px;
+    height: 60vh;
 }
 
 #actualites {
-    height: 600px;
+    height: 80vh;
+}
+
+@media screen and (max-width: 1000px) {
+    #agenda, #actualites {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #actualites {
+        height: 120vh;
+    }
+
+    #agenda {
+        height: 90vh;
+    }
 }
 
 /* ---------------------------------------------- TITRES AGENDA/ACTUS ------------------------------------------------ */
@@ -197,6 +212,18 @@ header h1 {
 #titre_agenda {
     text-align: center;
     padding: 0 10% 0 10%;
+}
+
+@media screen and (max-width: 1000px) {
+    #titre_magazine {
+        display: none;
+    }
+
+    #titre_actualites {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
 }
 
 /* ---------------------------------------------- IMAGES AGENDA/ACTUS ------------------------------------------------ */
@@ -252,19 +279,20 @@ header h1 {
 }
 
 #actualites .texte_actus p {
+    height: 70%;
     font-size: 100%;
     color: #585858;
+    word-wrap: break-word
 }
 
 #agenda .texte_agenda h1, #agenda .texte_agenda h2 {
-    margin: 10% 2% 10% 2%;
+    margin: 7% 2% 0 2%;
     text-align: center;
-    max-height: 4vh;
+    max-height: 40%;
     font-size: 150%;
 }
 
 #agenda .texte_agenda h1 {
-
     color: #585858;
     font-weight: bold;
 }
@@ -275,7 +303,16 @@ header h1 {
 }
 
 .texte_agenda, .texte_actus {
-    height: 50%
+    height: 45%
+}
+
+@media screen and (max-width: 1000px) {
+    #agenda .texte_agenda h1, #agenda .texte_agenda h2 {
+        margin: 3% 1% 7% 1%;
+        text-align: center;
+        max-height: 2vh;
+        font-size: 150%;
+    }
 }
 
 /* ----------------------------------------------- BLOCS D'ACTUALITES ------------------------------------------------ */
@@ -291,10 +328,10 @@ header h1 {
 }
 
 #grand_journal {
-    background-color: transparent;
-    margin-right: 5%;
+    background-color: #efefef;
+    margin-right: 2%;
     height: 100%;
-    max-width: 30%;
+    width: 33%;
 }
 
 #image_journal {
@@ -305,22 +342,45 @@ header h1 {
 }
 
 #moyenne_actualite {
-    margin: 0 0 1% 1%;
+    margin: 0;
     width: 64%;
-    height: 47%;
+    height: 49%;
 }
 
 #petite_actualite_1 {
-    margin: 1% 1% 0 1%;
+    margin: 1% 2% 0 0;
     width: 31%;
-    height: 48%;
+    height: 49%;
 }
 
 #petite_actualite_2 {
-    margin: 1% 0 1% 1%;
+    margin: 1% 0 1% 0;
     width: 31%;
-    height: 37%;
+    height: 40%;
 }
+
+@media screen and (max-width: 1000px) {
+    #agenda > *, #actualites > * {
+        border-radius: inherit;
+        background-color: #ffffff;
+        margin: 1% 5% 1% 5%
+    }
+
+    #agenda > *:hover, #actualites > *:hover {
+        background-color: #efefef;
+    }
+
+    #grand_journal {
+        height: 15%;
+        min-width: 90%;
+    }
+
+    #moyenne_actualite, #petite_actualite_1, #petite_actualite_2 {
+        width: 90%;
+        height: 25%;
+    }
+}
+
 
 /* ------------------------------------------------ BLOCS DE L'AGENDA ------------------------------------------------ */
 
@@ -333,28 +393,42 @@ header h1 {
 
 #moyen_agenda_1 {
     border-radius: inherit;
-    margin: 0 1% 0 1%;
+    margin: 0 2% 0 1%;
     width: 23%;
     height: 100%;
 }
 
 #moyen_agenda_2 {
     border-radius: inherit;
-    margin: 0 0 0 1%;
+    margin: 0 0 1% 0;
     width: 23%;
     height: 89%;
 }
+
+@media screen and (max-width: 1000px) {
+    #grand_agenda, #moyen_agenda_1,  #moyen_agenda_2 {
+        border-radius: inherit;
+        width: 90%;
+        height: 33%;
+        margin: 1% 5% 1% 5%;
+    }
+}
+
 /* ------------------------------------------- BOUTON PLUS D'ACTUS / AGENDA ------------------------------------------ */
+
+button { all: unset }
 
 #plus_actus, #plus_agenda {
     display: flex;
     justify-content: center;
     align-items: center;
+
     color: white;
+
     background-color: #538e52;
-    margin: 1% 0 0 1%;
+
     width: 23%;
-    height: 6%;
+    height: 7%;
 }
 
 #plus_actus {
@@ -366,8 +440,14 @@ header h1 {
     background-color: #53ae52;
 }
 
-/* -------------------------------------------------- FIN ACTUS/AGENDA ----------------------------------------------- */
+@media screen and (max-width: 1000px) {
+    #plus_actus, #plus_agenda {
+        width: 90%;
+        margin: 1% 5% 1% 5%;
+    }
+}
 
+/* -------------------------------------------------- FIN ACTUS/AGENDA ----------------------------------------------- */
 /*-----------------------------------------Debut Chiffre cles-----------------------------------------*/
 #container-liste {
     background-color: white;
@@ -426,33 +506,40 @@ header h1 {
 
 /*-----------------------------------------Debut Communes-----------------------------------------*/
 
-.titre-commune1 {
-    color: #323488;
-    font-family:'Trebuchet MS';
-    font-size: 35px;
-    font-weight: 400;
-    text-align: center;
-    margin: 40px auto;
-    border-top: 1px solid rgb(23, 32, 113) ;
-    padding-top: 30px;
-    width: 70%;
+.titre {
     display: flex;
     flex-direction: column;
-}
-
-.titre-commune2 {
-    color: #323488;
-    font-family:'Trebuchet MS';
-    letter-spacing: 1.3px;
-    font-size: 35px;
-    margin: 40px auto;
-    width: 100%;
-    display: table;
-    white-space: nowrap;
     text-align: center;
+    width: 100%;
 }
 
-.titre-commune2:before, .titre-commune2:after {
+.titre-commune {
+    color: #28294C;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 40px auto;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.381);
+    padding-top: 40px;
+    width: 65%;
+}
+
+iframe {
+    width: 100%;
+    height: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        height: 150%;
+    }
+
+    .titre-commune {
+        margin-bottom: 15px;
+    }
+}
+
+
+.titre:before, .titre-:after {
     content: "";
     display: table-cell;
     width: 600px; /*ecartement des espace */
@@ -466,7 +553,7 @@ iframe {
 }
 
 @media screen and (max-width: 1400px) {
-    .titre-commune2:before, .titre-commune2:after {
+    .titre-commune:before, .titre-commune:after {
         width: 37%; 
     }
 }
@@ -480,13 +567,13 @@ iframe {
         margin-bottom: 15px;
     }
 
-    .titre-commune2:before, .titre-commune2:after {
+    .titre-commune:before, .titre-commune:after {
         width: 33%; 
     }
 }
 
 @media screen and (max-width: 750px) {
-    .titre-commune2:before, .titre-commune2:after {
+    .titre-commune:before, .titre-commune:after {
         width: 20%; 
     }
 }
