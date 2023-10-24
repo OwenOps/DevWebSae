@@ -33,7 +33,7 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 38vh;
+    top: 28vh;
     text-align: center;
     padding: 25px 10px;
     border-radius: 20px;
@@ -69,9 +69,9 @@ header {
 #decouvrir {
     color: #323488;
     border-top: 1px solid rgb(23, 32, 113) ;
-    padding-top: 60px;
-    margin-bottom: 100px;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 45px;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 850px) {
@@ -197,7 +197,7 @@ header {
     }
 
     #cadre-ligne2 > div:last-child {
-        width: 50%;
+        width: initial;
     }
 }
 
