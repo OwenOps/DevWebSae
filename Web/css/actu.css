@@ -1,0 +1,309 @@
+body {
+    background-color: #D9D9D9;
+    scroll-behavior: smooth;
+    font-family: Comfortaa, sans-serif;
+}
+
+header {
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/cathedrale.jpg);
+    background-size: cover;
+}
+
+#titre {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    bottom: 30%;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    #titre {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        font-size: 50px;
+        text-align: center;
+        bottom: 35%;
+        color: white;
+    }
+}
+
+#infos {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.381);
+}
+
+/* --------------------------------------------------- PARTAGE ------------------------------------------------------- */
+
+#partage {
+    width: 70%;
+    height: 125px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+    display: flex;
+}
+
+#partage img {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0 1% 0 1%
+}
+
+/* --------------------------------------------------- BLOC D'ACTU --------------------------------------------------- */
+
+#actu {
+    width: 70%;
+    margin: 3% auto;
+}
+
+#actu h2 {
+    color: #538E52
+}
+
+#actu p {
+    text-align: justify;
+    line-height: 2em;
+}
+
+/* -------------------------------------------- PROPRIETES ACTUS/AGENDA ---------------------------------------------- */
+
+#actualites {
+    border-radius: 20px;
+    margin: 0 10% 5% 10%;
+    height: 50vh;
+}
+
+@media screen and (max-width: 1000px) {
+    #actualites {
+        height: 100vh;
+        margin: 0 3% 0 3%;
+    }
+}
+
+/* ---------------------------------------------- IMAGES AGENDA/ACTUS ------------------------------------------------ */
+
+.image_actu {
+    border-radius: inherit;
+    height: 50%;
+    width: 100%;
+    padding: 2%;
+}
+
+.image_actu p {
+    border-radius: inherit;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    width: fit-content;
+    position: relative;
+    left: 2%;
+    background-color: #538e52;
+    border: solid white 0.05em;
+    bottom: 2.5em;
+    color: #ffffff;
+}
+
+.image_actu img  {
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------------- TEXTE ACTUS/AGENDA ------------------------------------------------ */
+#actualites .texte_actus h1, #actualites .texte_actus p {
+    overflow: hidden;
+    margin: 0 2% 2% 2%;
+}
+
+#actualites .texte_actus h1 {
+    font-size: 150%;
+    color: #538e52;
+}
+
+#actualites .texte_actus p {
+    height: 70%;
+    font-size: 100%;
+    color: #585858;
+    word-wrap: break-word
+}
+
+.texte_actus {
+    height: 45%
+}
+
+
+/* ----------------------------------------------- BLOCS D'ACTUALITES ------------------------------------------------ */
+
+#actualites > * {
+    border-radius: inherit;
+    background-color: #ffffff;
+    float: left;
+}
+
+#actualites > *:hover {
+    background-color: #efefef;
+}
+
+.actu {
+    background-color: #efefef;
+    margin: 0 1.5% 0 1.5%;
+    height: 95%;
+    width: 30.3%;
+    float: left
+}
+
+@media screen and (max-width: 1000px) {
+    #actualites > * {
+        border-radius: inherit;
+        background-color: #ffffff;
+        margin: 5% 5% 5% 5%
+    }
+
+    #actualites > *:hover {
+        background-color: #efefef;
+    }
+
+    .actu {
+        width: 90%;
+        height: 30%;
+    }
+}
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.titre-commune {
+    color: #28294C;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 40px auto;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.381);
+    padding-top: 40px;
+    width: 65%;
+}
+
+iframe {
+    width: 100%;
+    height: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        height: 150%;
+    }
+
+    .titre-commune {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* ------------------------------------------------- CORPS DE TEXTE -------------------------------------------------- */
+
+
+div.image {
+    display: inline-flex;
+    margin: 1% auto 3% auto;
+    min-width: 75%;
+    max-width: 100%;
+}
+
+p.image, img.image {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 46%;
+    margin: 2%;
+    float: left;
+}
+
+p.image {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    div.image {
+        display: inline;
+    }
+    p.image, img.image {
+        border-radius: 20px;
+        object-fit: cover;
+        width: 100%;
+        margin: 0 auto 5% auto;
+    }
+
+    p.image {
+        margin-bottom: 20%;
+    }
+}
+
+
+/* ----------------------------------------------- ESPACE COMMENTAIRES ----------------------------------------------- */
+
+
+
+div#espace_commentaires {
+    width: 70%;
+    margin : 0 auto;
+}
+
+div#commenter {
+    height: 250px;
+    margin: 2% auto
+}
+
+input#ecrire {
+    width: 97%;
+    height: 150px;
+    padding: 1%;
+    margin: 1.5%;
+}
+
+input#prenom, input#poster {
+    width: 47%;
+    padding: 1%;
+    margin: 1.5%;
+    float: left;
+    display: compact;
+}
+
+div#commentaires {
+    margin: 5% 0 5% 0
+}
+
+
+.commentaire {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+}
+
+.commentaire h2 {
+    font-weight: bold;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.381);
+}
+
+.commentaire .date {
+    font-weight: lighter;
+    font-size: 0.5em;
+    color: rgb(128, 128, 128);
+    text-align: right;
+    float: right;
+    padding-top: 1%
+}
+

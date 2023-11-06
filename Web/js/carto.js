@@ -1,6 +1,6 @@
 function change_image(c) {
     var a = document.getElementById("image_map");
-    a.style.backgroundImage = "url(../img/map/" + c + ".png)";
+    a.style.backgroundImage = "url(img/mapZone/" + c + ".png)";
     return true;
 }
 
@@ -9,11 +9,6 @@ function hide_image() {
     a.style.backgroundImage = "none";
     return true;
 }
-
-// //Pour avoir les bonnes coordonnees (fonctionne pas)
-/* $(document).ready(function (e) {
-    $('img[usemap]').rwdImageMaps();
-}); */
 
 //Quand on clique, sa change la description
 $(document).ready(function () {
